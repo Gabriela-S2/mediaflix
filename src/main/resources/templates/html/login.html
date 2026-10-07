@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaFlix - Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/app.js"></script>
+</head>
+<body class="login-body">
+<!-- O cabeçalho na tela de login costuma ter apenas a logo -->
+<header class="login-header">
+    <h1 class="logo">MediaFlix</h1>
+</header>
+
+<div class="login-container">
+    <h2>Entrar</h2>
+    <form id="login-form">
+        <div class="input-group">
+            <input type="email" id="email" required placeholder="E-mail ou número de telefone">
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" required placeholder="Senha">
+        </div>
+        <button type="submit" class="btn-submit">Entrar</button>
+
+        <div class="form-help">
+            <label>
+                <input type="checkbox" checked> Lembre-se de mim
+            </label>
+            <a href="#">Precisa de ajuda?</a>
+        </div>
+    </form>
+
+    <div class="signup-prompt">
+        <p>Novo por aqui? <a href="#" id="toggle-signup">Assine agora.</a></p>
+        <small>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô.</small>
+    </div>
+</div>
+</body>
+</html>

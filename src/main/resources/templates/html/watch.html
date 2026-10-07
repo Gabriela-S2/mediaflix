@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistir - MediaFlix</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/app.js"></script>
+</head>
+<body>
+<header id="navbar" class="black-bg">
+    <a href="index.html" style="text-decoration: none;"><h1 class="logo">MediaFlix</h1></a>
+    <nav>
+        <a href="index.html">Voltar ao Início</a>
+    </nav>
+</header>
+
+<main class="watch-main">
+    <!-- Área do Player de Vídeo -->
+    <div class="video-player-container">
+        <!-- Usando um vídeo de exemplo de código aberto (Big Buck Bunny) -->
+        <video controls autoplay class="video-player">
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+
+    <!-- Área de Informações do Filme/Série -->
+    <div class="video-info-container">
+        <h2 id="video-title">Big Buck Bunny</h2>
+
+        <div class="video-meta">
+            <span class="match">98% Relevante</span>
+            <span class="year">2008</span>
+            <span class="rating">Livre</span>
+            <span class="duration">10 min</span>
+            <span class="hd">HD</span>
+        </div>
+
+        <div class="video-details">
+            <div class="description">
+                <p>Um coelho gigante e amigável decide se vingar de três roedores mal-intencionados que estão perturbando a paz da floresta. Uma clássica animação de código aberto que testa os limites da computação gráfica.</p>
+
+                <div class="action-buttons">
+                    <button class="btn-play">▶ Assistir Novamente</button>
+                    <button class="btn-round" title="Adicionar à Minha Lista">+</button>
+                    <button class="btn-round" title="Gostei">👍</button>
+                </div>
+            </div>
+
+            <div class="cast-info">
+                <p><strong>Elenco:</strong> Coelho, Esquilos voadores, Borboletas</p>
+                <p><strong>Gêneros:</strong> Animação, Comédia, Curta-metragem</p>
+                <p><strong>Direção:</strong> Sacha Goedegebure</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+</body>
+</html>

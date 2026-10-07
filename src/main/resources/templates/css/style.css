@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Cabeçalho / Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+}
+
+header.black-bg {
+    background-color: #141414;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #b3b3b3;
+}
+
+/* Seção de Destaque */
+.hero {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+    position: relative;
+}
+
+/* Degradê para mesclar a imagem de fundo com o resto do site */
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to top, #141414 0%, transparent 100%);
+}
+
+.hero-content {
+    max-width: 600px;
+    z-index: 10;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.btn-play, .btn-info {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: 0.2s ease;
+}
+
+.btn-play { background-color: #fff; color: #000; }
+.btn-play:hover { background-color: rgba(255,255,255,0.75); }
+
+.btn-info { background-color: rgba(109,109,110,0.7); color: #fff; }
+.btn-info:hover { background-color: rgba(109,109,110,0.4); }
+
+/* Filmes em Alta / Carrossel */
+.media-row {
+    padding: 20px 4%;
+    margin-top: -50px; /* Sobrepõe levemente o degradê do hero */
+    position: relative;
+    z-index: 10;
+}
+
+.media-row h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.media-carousel {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scrollbar-width: none; /* Firefox */
+}
+
+.media-carousel::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+.media-item {
+    min-width: 250px;
+    height: 140px;
+    background-color: #222;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.media-item:hover {
+    transform: scale(1.08);
+}
+
+.media-item h4 {
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
+    background: rgba(0,0,0,0.5);
+    padding: 5px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+/* =========================================
+   ESTILOS DA PÁGINA DE LOGIN
+   ========================================= */
+.login-body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://assets.nflxext.com/ffe/siteui/vlv3/a73c4363-1dcd-4719-b3b1-3725418fd91d/fe1147dd-78be-44aa-a0e5-2d2994305a13/BR-pt-20231016-popsignuptwoweeks-perspective_alpha_website_large.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-header {
+    background: transparent;
+    padding: 20px 4%;
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 60px 68px 40px;
+    border-radius: 4px;
+}
+
+.login-container h2 {
+    font-size: 2rem;
+    margin-bottom: 28px;
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.input-group input:focus {
+    background-color: #444;
+    outline: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 16px;
+    background-color: #e50914;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 24px;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #c90812;
+}
+
+.form-help {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #b3b3b3;
+    margin-top: 15px;
+}
+
+.form-help a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.form-help a:hover {
+    text-decoration: underline;
+}
+
+.signup-prompt {
+    margin-top: 60px;
+    color: #737373;
+}
+
+.signup-prompt a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signup-prompt a:hover {
+    text-decoration: underline;
+}
+
+.signup-prompt small {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.8rem;
+}
+
+/* =========================================
+   ESTILOS DA PÁGINA DE VÍDEO (WATCH)
+   ========================================= */
+.watch-main {
+    padding-top: 80px; /* Compensa a navbar fixa */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-player-container {
+    width: 100%;
+    background-color: #000;
+    aspect-ratio: 16/9;
+}
+
+.video-player {
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+.video-info-container {
+    padding: 40px 4%;
+}
+
+.video-info-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.video-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    color: #bcbcbc;
+    font-weight: bold;
+}
+
+.video-meta .match {
+    color: #46d369; /* Verde estilo Netflix para relevância */
+}
+
+.video-meta .rating {
+    border: 1px solid #bcbcbc;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.video-meta .hd {
+    border: 1px solid #bcbcbc;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.7rem;
+}
+
+.video-details {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.description {
+    flex: 2;
+    min-width: 300px;
+}
+
+.description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.cast-info {
+    flex: 1;
+    min-width: 250px;
+    font-size: 0.9rem;
+    color: #777;
+    line-height: 1.6;
+}
+
+.cast-info strong {
+    color: #bcbcbc;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn-round {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.5);
+    background-color: rgba(42,42,42,0.6);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.btn-round:hover {
+    border-color: white;
+    background-color: rgba(255,255,255,0.1);
+}
