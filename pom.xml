@@ -97,6 +97,12 @@
             <artifactId>dotenv-java</artifactId>
             <version>3.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-hibernate-orm-panache</artifactId>
+            <version>4.0.0.Beta1</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
