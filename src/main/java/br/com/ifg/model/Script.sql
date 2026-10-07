@@ -45,3 +45,15 @@ CREATE TABLE usuario_filmes(
                                tempo_assistido BIGINT DEFAULT 0,
                                PRIMARY KEY (usuario_id, filme_id)
 );
+
+CREATE TABLE logs_uso (
+                          id SERIAL PRIMARY KEY,
+                          acao_executada VARCHAR(255),
+                          metodo_http VARCHAR(10),
+                          url TEXT,
+                          ip_cliente VARCHAR(45),
+                          usuario_executor VARCHAR(255),
+                          data_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                          payload TEXT,
+                          headers TEXT
+);

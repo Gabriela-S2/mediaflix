@@ -1,111 +1,189 @@
-// Efeito da barra de navegação ao rolar a página
-window.addEventListener('scroll', () => {
-    const navbar = document.getElementById('navbar');
-    if (window.scrollY > 50) {
-        navbar.classList.add('black-bg');
-    } else {
-        navbar.classList.remove('black-bg');
-    }
+const API_URL = 'http://localhost:8080'; // Ajuste se o Quarkus rodar noutra porta
+
+document.addEventListener('DOMContentLoaded', () => {
+    configurarNavegacao();
+    rotearPaginaAtual();
 });
 
-// Dados falsos (Mock) para testar enquanto a API do Quarkus não está rodando
-const mockMediaData = [
-    { id: 1, title: "Stranger Things", img: "https://images.unsplash.com/photo-1618666012174-83b441c0bc76?w=600&q=80" },
-    { id: 2, title: "Cyberpunk", img: "https://images.unsplash.com/photo-1510511459019-5efa7ae5ca6a?w=600&q=80" },
-    { id: 3, title: "A Inteligência", img: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=80" },
-    { id: 4, title: "Matrix", img: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&q=80" },
-    { id: 5, title: "O Código", img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80" },
-    { id: 6, title: "Hackers", img: "https://images.unsplash.com/photo-1526374865366-af181045b630?w=600&q=80" }
-];
-
-function initApp() {
-    // 1. Configurar o destaque principal
-    const heroSection = document.getElementById('hero-section');
-    const heroTitle = document.getElementById('featured-title');
-    const heroDesc = document.getElementById('featured-desc');
-
-    heroSection.style.backgroundImage = `url('https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=1600&q=80')`;
-    heroTitle.innerText = "Projeto MediaFlix";
-    heroDesc.innerText = "Uma plataforma de streaming construída para fins acadêmicos. Este frontend conecta-se a uma API REST robusta desenvolvida em Quarkus e Java.";
-
-    // 2. Renderizar a lista de mídias
-    renderMediaList(mockMediaData);
-
-    /*
-    ========================================================
-    INTEGRAÇÃO COM O SEU BACKEND QUARKUS (Descomente depois)
-    ========================================================
-    Substitua a chamada da função 'renderMediaList(mockMediaData)'
-    acima pelo bloco abaixo quando o seu Quarkus (localhost:8080) estiver rodando
-    e retornando JSON através de uma rota, por exemplo: /api/movies
-
-    fetch('http://localhost:8080/api/movies')
-        .then(response => response.json())
-        .then(data => {
-            renderMediaList(data);
-        })
-        .catch(error => {
-            console.error("Erro ao conectar com o Quarkus:", error);
-            // Fallback para mock data se o servidor estiver offline
-            renderMediaList(mockMediaData);
-        });
-    */
+function configurarNavegacao() {
+    window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        if (navbar) {
+            if (window.scrollY > 50) navbar.classList.add('black-bg');
+            else navbar.classList.remove('black-bg');
+        }
+    });
 }
 
-// Função para gerar o HTML do carrossel
-function renderMediaList(movies) {
-    const trendingList = document.getElementById('trending-list');
-    trendingList.innerHTML = ''; // Limpa o estado de "carregando"
+function rotearPaginaAtual() {
+    const path = window.location.pathname;
 
-    movies.forEach(movie => {
+    if (path.includes('login.html')) {
+        configurarLogin();
+    } else if (path.includes('recuperar-senha.html')) {
+        configurarRecuperacaoSenha();
+    } else if (path.includes('index.html') || path === '/' || path === '') {
+        verificarAutenticacao();
+        carregarFilmes();
+    }
+}
+
+// ==========================================
+// 1. LÓGICA DE LOGIN E JWT
+// ==========================================
+function configurarLogin() {
+    const loginForm = document.getElementById('login-form');
+    if (!loginForm) return;
+
+    loginForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = document.getElementById('email').value;
+        const senha = document.getElementById('password').value;
+
+        try {
+            const response = await fetch(`${API_URL}/usuarios/login`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, senha })
+            });
+
+            if (response.ok) {
+                // O Quarkus deve retornar o token (ex: { "token": "eyJhbG..." })
+                const data = await response.json();
+                localStorage.setItem('mediaflix_token', data.token);
+                window.location.href = 'index.html';
+            } else {
+                alert('Credenciais inválidas. Tente novamente.');
+            }
+        } catch (error) {
+            console.error('Erro no login:', error);
+            alert('Erro ao conectar ao servidor.');
+        }
+    });
+}
+
+function verificarAutenticacao() {
+    const token = localStorage.getItem('mediaflix_token');
+    if (!token) {
+        // Se não tem token (não está logado), redireciona para o login
+        window.location.href = 'login.html';
+    }
+}
+
+function fazerLogout() {
+    localStorage.removeItem('mediaflix_token');
+    window.location.href = 'login.html';
+}
+
+// ==========================================
+// 2. LÓGICA DE RECUPERAÇÃO DE SENHA
+// ==========================================
+function configurarRecuperacaoSenha() {
+    const formPedir = document.getElementById('form-pedir-codigo');
+    const formRedefinir = document.getElementById('form-redefinir-senha');
+    let emailRecuperacao = '';
+
+    if (formPedir) {
+        formPedir.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            emailRecuperacao = document.getElementById('recuperar-email').value;
+
+            try {
+                const response = await fetch(`${API_URL}/recuperacao/gerar`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email: emailRecuperacao })
+                });
+
+                if (response.ok) {
+                    document.getElementById('step-1-container').style.display = 'none';
+                    document.getElementById('step-2-container').style.display = 'block';
+                } else {
+                    alert('Erro ao solicitar código. Verifique se o e-mail está correto.');
+                }
+            } catch (error) {
+                console.error('Erro:', error);
+            }
+        });
+    }
+
+    if (formRedefinir) {
+        formRedefinir.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const codigo = document.getElementById('codigo-verificacao').value;
+            const novaSenha = document.getElementById('nova-senha').value;
+
+            try {
+                const response = await fetch(`${API_URL}/recuperacao/redefinir`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email: emailRecuperacao, codigo, novaSenha })
+                });
+
+                if (response.ok) {
+                    alert('Senha redefinida com sucesso! Faça o login.');
+                    window.location.href = 'login.html';
+                } else {
+                    alert('Código inválido ou expirado.');
+                }
+            } catch (error) {
+                console.error('Erro:', error);
+            }
+        });
+    }
+}
+
+// ==========================================
+// 3. LÓGICA DE FILMES (COM AUTORIZAÇÃO)
+// ==========================================
+async function carregarFilmes() {
+    const trendingList = document.getElementById('trending-list');
+    if (!trendingList) return;
+
+    const token = localStorage.getItem('mediaflix_token');
+
+    try {
+        // Envia o JWT no cabeçalho para provar quem é e qual o seu plano
+        const response = await fetch(`${API_URL}/filmes`, {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json'
+            }
+        });
+
+        if (response.status === 401 || response.status === 403) {
+            alert('Sessão expirada ou acesso negado.');
+            fazerLogout();
+            return;
+        }
+
+        const filmes = await response.json();
+        renderizarFilmes(filmes);
+
+    } catch (error) {
+        console.error("Erro ao buscar filmes:", error);
+        trendingList.innerHTML = '<p>Erro ao carregar a lista de filmes.</p>';
+    }
+}
+
+function renderizarFilmes(filmes) {
+    const trendingList = document.getElementById('trending-list');
+    trendingList.innerHTML = '';
+
+    filmes.forEach(filme => {
         const item = document.createElement('div');
         item.className = 'media-item';
 
-        // Aqui assumimos que sua API vai retornar uma propriedade "img" ou "coverUrl"
-        item.style.backgroundImage = `url(${movie.img})`;
+        // Puxa o caminho da imagem que veio do banco de dados (ex: "../midia/horizontal_img/matrix.jpg")
+        item.style.backgroundImage = `url(${filme.caminhoImagemHorizontal})`;
+        item.innerHTML = `<h4>${filme.titulo}</h4>`;
 
-        item.innerHTML = `<h4>${movie.title}</h4>`;
-
-        // Exemplo de interação de clique
         item.addEventListener('click', () => {
-            alert(`Você clicou em: ${movie.title}\nAqui você abriria um modal ou redirecionaria para o vídeo.`);
+            // Navega para a página de assistir, passando o ID na URL
+            window.location.href = `watch.html?id=${filme.id}`;
         });
 
         trendingList.appendChild(item);
     });
 }
-
-// Iniciar a aplicação quando o HTML carregar
-document.addEventListener('DOMContentLoaded', initApp);
-
-// Verifica se estamos na página de login
-const loginForm = document.getElementById('login-form');
-if (loginForm) {
-    loginForm.addEventListener('submit', (e) => {
-        e.preventDefault(); // Evita recarregar a página
-        const email = document.getElementById('email').value;
-
-        // Simulação de login - Em produção, aqui iria um POST para o Quarkus
-        alert(`Simulação de Login para: ${email}\n\nConectando à API Quarkus... Sucesso! Redirecionando...`);
-
-        // Redireciona para a página principal
-        window.location.href = 'index.html';
-    });
-
-    const toggleSignup = document.getElementById('toggleSignup');
-    if(toggleSignup) {
-        toggleSignup.addEventListener('click', (e) => {
-            e.preventDefault();
-            alert("Aqui você exibiria os campos de Cadastro (Nome, Confirmar Senha, etc).");
-        });
-    }
-}
-
-// Atualizar o clique dos filmes da página inicial (index.html) para ir para a página de vídeo
-// Se quiser testar a navegação, substitua o evento de clique na função `renderMediaList` no app.js por:
-/*
-item.addEventListener('click', () => {
-    // Redireciona para a página do vídeo
-    window.location.href = 'watch.html?id=' + movie.id;
-});
-*/

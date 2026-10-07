@@ -1,4 +1,6 @@
-package br.edu.ifg.luziania.p3.mvc.session;
+package br.com.ifg.session;
+
+import br.com.ifg.model.Usuario;
 
 /**
  * Singleton que mantém o usuário autenticado em memória durante toda a sessão.
