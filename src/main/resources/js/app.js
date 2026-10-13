@@ -26,6 +26,96 @@ function rotearPaginaAtual() {
         verificarAutenticacao();
         carregarFilmes();
     }
+
+    // Adicione dentro da função rotearPaginaAtual()
+    if (path.includes('cadastro.html')) {
+        configurarCadastro();
+    } else if (path.includes('index.html') || path === '/' || path === '') {
+        verificarAutenticacao();
+        carregarFilmes();
+        configurarMenuAvatar(); // <- Adicione esta chamada
+    }
+
+// ==========================================
+// LÓGICA DO MENU SUSPENSO DO AVATAR
+// ==========================================
+    function configurarMenuAvatar() {
+        const userMenu = document.getElementById('user-menu');
+        const btnLogout = document.getElementById('btn-logout');
+
+        if (userMenu) {
+            userMenu.addEventListener('click', (e) => {
+                // Evita que o clique feche imediatamente caso o clique seja dentro do próprio menu
+                e.stopPropagation();
+                userMenu.classList.toggle('active');
+            });
+        }
+
+        // Fecha o dropdown se clicar fora dele
+        document.addEventListener('click', (e) => {
+            if (userMenu && !userMenu.contains(e.target)) {
+                userMenu.classList.remove('active');
+            }
+        });
+
+        if (btnLogout) {
+            btnLogout.addEventListener('click', (e) => {
+                e.preventDefault();
+                fazerLogout();
+            });
+        }
+    }
+
+// ==========================================
+// LÓGICA DE CADASTRO
+// ==========================================
+    function configurarCadastro() {
+        const cadastroForm = document.getElementById('cadastro-form');
+        if (!cadastroForm) return;
+
+        cadastroForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const senha = document.getElementById('password').value;
+
+            // Captura o valor do plano selecionado no radio button
+            const planoSelecionado = document.querySelector('input[name="plano"]:checked');
+
+            if (!planoSelecionado) {
+                alert('Por favor, selecione um plano.');
+                return;
+            }
+
+            const payload = {
+                username: username,
+                email: email,
+                senha: senha,
+                planoId: parseInt(planoSelecionado.value)
+            };
+
+            try {
+                // Requisição para a sua API Quarkus utilizando DTO
+                const response = await fetch(`${API_URL}/usuarios`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (response.ok) {
+                    alert('Conta criada com sucesso! Faça login para continuar.');
+                    window.location.href = 'login.html';
+                } else {
+                    const erro = await response.json();
+                    alert(`Erro ao criar conta: ${erro.message || 'Dados inválidos'}`);
+                }
+            } catch (error) {
+                console.error('Erro no cadastro:', error);
+                alert('Erro ao conectar ao servidor.');
+            }
+        });
+    }
 }
 
 // ==========================================

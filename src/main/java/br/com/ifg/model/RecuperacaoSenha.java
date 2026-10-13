@@ -1,12 +1,9 @@
 package br.com.ifg.model;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
 import java.time.LocalDateTime;
 
-@Getter
-@Setter
+
 @Entity
 @Table(name = "recuperacao_senha")
 public class RecuperacaoSenha {
@@ -23,4 +20,36 @@ public class RecuperacaoSenha {
 
     @Column(name = "data_criacao")
     private LocalDateTime dataCriacao = LocalDateTime.now();
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public LocalDateTime getDataCriacao() {
+        return dataCriacao;
+    }
+
+    public void setDataCriacao(LocalDateTime dataCriacao) {
+        this.dataCriacao = dataCriacao;
+    }
 }

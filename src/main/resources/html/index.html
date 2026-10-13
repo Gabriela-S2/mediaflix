@@ -9,13 +9,25 @@
 </head>
 <body>
 <header id="navbar">
-    <h1 class="logo">MediaFlix</h1>
-    <nav>
-        <a href="#">Início</a>
-        <a href="#">Séries</a>
-        <a href="#">Filmes</a>
-        <a href="#">Minha Lista</a>
-    </nav>
+    <div style="display: flex; align-items: center;">
+        <a href="index.html" style="text-decoration: none;"><h1 class="logo">MediaFlix</h1></a>
+        <nav class="nav-links">
+            <a href="#">Início</a>
+            <a href="#">Séries</a>
+            <a href="#">Filmes</a>
+            <a href="#">Minha Lista</a>
+        </nav>
+    </div>
+
+    <!-- Menu do Usuário (Avatar e Dropdown) -->
+    <div class="user-menu" id="user-menu">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Avatar" class="avatar" id="avatar-btn">
+        <div class="dropdown-menu">
+            <a href="#">Editar Perfil</a>
+            <a href="#">Alterar Assinatura</a>
+            <a href="#" id="btn-logout">Sair do MediaFlix</a>
+        </div>
+    </div>
 </header>
 
 <section class="hero" id="hero-section">

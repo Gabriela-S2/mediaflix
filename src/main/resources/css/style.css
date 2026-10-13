@@ -373,3 +373,157 @@ nav a:hover {
     border-color: white;
     background-color: rgba(255,255,255,0.1);
 }
+
+/* =========================================
+   MENU DO USUÁRIO E AVATAR (INDEX)
+   ========================================= */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.user-menu {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+.user-menu:hover .avatar {
+    transform: scale(1.1);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid #333;
+    border-radius: 4px;
+    width: 200px;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+}
+
+.user-menu.active .dropdown-menu {
+    display: flex;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #222;
+    transition: background-color 0.2s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #333;
+}
+
+.dropdown-menu a:last-child {
+    border-bottom: none;
+    color: #b3b3b3;
+}
+
+/* =========================================
+   PÁGINA DE CADASTRO E PLANOS
+   ========================================= */
+.btn-login-header {
+    color: #fff;
+    background-color: #e50914;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cadastro-container {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px;
+    border-radius: 8px;
+}
+
+.subtitle {
+    color: #b3b3b3;
+    margin-bottom: 30px;
+}
+
+.planos-title {
+    margin: 30px 0 15px;
+    font-size: 1.2rem;
+}
+
+.planos-grid {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.plano-card {
+    flex: 1;
+    cursor: pointer;
+}
+
+.plano-card input {
+    display: none; /* Esconde o radio button nativo */
+}
+
+.plano-content {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.plano-card input:checked + .plano-content {
+    border-color: #e50914;
+    background-color: rgba(229, 9, 20, 0.1);
+}
+
+.plano-content h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.plano-content .preco {
+    display: block;
+    font-weight: bold;
+    color: #b3b3b3;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.plano-content ul {
+    list-style: none;
+    padding: 0;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.plano-content ul li::before {
+    content: "✓ ";
+    color: #e50914;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .planos-grid {
+        flex-direction: column;
+    }
+}

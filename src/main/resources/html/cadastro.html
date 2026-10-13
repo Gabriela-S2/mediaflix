@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - MediaFlix</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="login-body">
+<header class="login-header">
+    <h1 class="logo">MediaFlix</h1>
+    <a href="login.html" class="btn-login-header">Entrar</a>
+</header>
+
+<div class="cadastro-container">
+    <h2>Crie sua conta</h2>
+    <p class="subtitle">Falta pouco para você assistir a milhares de filmes e séries.</p>
+
+    <form id="cadastro-form">
+        <div class="input-group">
+            <input type="text" id="username" required placeholder="Nome de usuário">
+        </div>
+        <div class="input-group">
+            <input type="email" id="email" required placeholder="E-mail">
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" required placeholder="Crie uma senha (mín. 6 caracteres)">
+        </div>
+
+        <h3 class="planos-title">Escolha seu plano</h3>
+        <div class="planos-grid">
+
+            <!-- Plano Econômico -->
+            <label class="plano-card">
+                <input type="radio" name="plano" value="1" required>
+                <div class="plano-content">
+                    <h4>Econômico</h4>
+                    <span class="preco">R$ 18,90 / mês</span>
+                    <ul>
+                        <li>Com anúncios</li>
+                        <li>Resolução 720p</li>
+                        <li>Catálogo Básico</li>
+                    </ul>
+                </div>
+            </label>
+
+            <!-- Plano Padrão -->
+            <label class="plano-card">
+                <input type="radio" name="plano" value="2">
+                <div class="plano-content">
+                    <h4>Padrão</h4>
+                    <span class="preco">R$ 39,90 / mês</span>
+                    <ul>
+                        <li>Sem anúncios</li>
+                        <li>Resolução 1080p</li>
+                        <li>Lançamentos</li>
+                    </ul>
+                </div>
+            </label>
+
+            <!-- Plano Premium -->
+            <label class="plano-card">
+                <input type="radio" name="plano" value="3">
+                <div class="plano-content">
+                    <h4>Premium</h4>
+                    <span class="preco">R$ 55,90 / mês</span>
+                    <ul>
+                        <li>Sem anúncios</li>
+                        <li>Resolução 4K + HDR</li>
+                        <li>Acesso Total exclusivo</li>
+                    </ul>
+                </div>
+            </label>
+
+        </div>
+
+        <button type="submit" class="btn-submit">Finalizar Cadastro</button>
+    </form>
+</div>
+
+<script src="../js/app.js"></script>
+</body>
+</html>

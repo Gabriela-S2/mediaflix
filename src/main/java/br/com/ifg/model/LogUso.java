@@ -1,12 +1,8 @@
 package br.com.ifg.model;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
 import java.time.LocalDateTime;
 
-@Getter
-@Setter
 @Entity
 @Table(name = "logs_uso")
 public class LogUso {
@@ -37,4 +33,76 @@ public class LogUso {
 
     @Column(columnDefinition = "TEXT")
     private String headers;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getAcaoExecutada() {
+        return acaoExecutada;
+    }
+
+    public void setAcaoExecutada(String acaoExecutada) {
+        this.acaoExecutada = acaoExecutada;
+    }
+
+    public String getMetodoHttp() {
+        return metodoHttp;
+    }
+
+    public void setMetodoHttp(String metodoHttp) {
+        this.metodoHttp = metodoHttp;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getIpCliente() {
+        return ipCliente;
+    }
+
+    public void setIpCliente(String ipCliente) {
+        this.ipCliente = ipCliente;
+    }
+
+    public String getUsuarioExecutor() {
+        return usuarioExecutor;
+    }
+
+    public void setUsuarioExecutor(String usuarioExecutor) {
+        this.usuarioExecutor = usuarioExecutor;
+    }
+
+    public LocalDateTime getDataHora() {
+        return dataHora;
+    }
+
+    public void setDataHora(LocalDateTime dataHora) {
+        this.dataHora = dataHora;
+    }
+
+    public String getPayload() {
+        return payload;
+    }
+
+    public void setPayload(String payload) {
+        this.payload = payload;
+    }
+
+    public String getHeaders() {
+        return headers;
+    }
+
+    public void setHeaders(String headers) {
+        this.headers = headers;
+    }
 }
