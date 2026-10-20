@@ -1,4 +1,4 @@
-package br.com.ifg.resource;
+package br.com.ifg.resources;
 
 import br.com.ifg.model.Usuario;
 import br.com.ifg.service.UsuarioService;

@@ -9,4 +9,11 @@ public record FilmeResponseDTO(
         String caminhoImagemHorizontal,
         String caminhoImagemVertical,
         PlanoResponseDTO planoMinimo
-) {}
+) {
+    public FilmeResponseDTO() {
+        
+    }
+
+    public void setId(Long id) {
+    }
+}

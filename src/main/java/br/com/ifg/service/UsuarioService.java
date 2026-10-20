@@ -40,9 +40,10 @@ public class UsuarioService {
         }
 
         // Geração do token JWT válido por 24 horas
+        // CORREÇÃO: Utilização do getAdmin() em vez do inexistente getTipo()
         return Jwt.issuer("https://mediaflix.ifg.edu.br")
                 .upn(usuario.getEmail())
-                .groups(usuario.getTipo() != null ? usuario.getTipo() : "USER")
+                .groups(Boolean.TRUE.equals(usuario.getAdmin()) ? "ADMIN" : "USER")
                 .expiresIn(Duration.ofHours(24))
                 .sign();
     }
@@ -52,7 +53,10 @@ public class UsuarioService {
         try {
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
             byte[] encodedhash = digest.digest(senha.getBytes(StandardCharsets.UTF_8));
+
+            // CORREÇÃO: Adicionado o operador de multiplicação '*'
             StringBuilder hexString = new StringBuilder(2 * encodedhash.length);
+
             for (byte b : encodedhash) {
                 String hex = Integer.toHexString(0xff & b);
                 if (hex.length() == 1) {

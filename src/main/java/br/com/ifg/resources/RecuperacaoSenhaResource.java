@@ -1,4 +1,4 @@
-package br.com.ifg.resource;
+package br.com.ifg.resources;
 
 import br.com.ifg.dto.RedefinirSenhaRequestDTO;
 import br.com.ifg.service.RecuperacaoSenhaService;
