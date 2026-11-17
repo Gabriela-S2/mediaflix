@@ -1,0 +1,3104 @@
+[14:36:55] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/q/dev-ui/welcome]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[14:42:53] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+  x-quarkus-hot-deployment-done: [true]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[14:42:54] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[14:43:09] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index.html]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[14:43:17] GET http://localhost:8080/cadastro
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastro
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/RecuperarController/recuperar-senha.html]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[14:43:24] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/RecuperarController/recuperar-senha.html]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[14:48:29] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/api/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[14:48:37] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/RecuperarController/recuperarSenha.html]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[14:56:41] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/api/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[15:05:08] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/RecuperarController/recuperarSenha.html]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[15:05:10] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[15:05:23] GET http://localhost:8080/cadastro
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastro
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index.html]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[15:09:01] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[15:18:39] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/CadastroController/cadastro.html]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[15:18:41] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[15:18:55] GET http://localhost:8080/cadastro
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastro
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/CadastroController/cadastro.html]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[15:19:50] POST http://localhost:8080/usuarios
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [97]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"username":"Gabriela","email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]","planoId":1}
+--------------------------------------------------
+[15:19:57] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[15:20:20] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[15:21:12] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [118]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[15:21:14] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [118]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[15:21:37] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[15:37:34] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Content-Length: [70]
+  Content-Type: [application/json]
+  Host: [localhost:8080]
+  User-Agent: [insomnia/13.3.1]
+- Payload:
+  {
+	"email": "gabrielaribeirodf2006@gmail.com",
+	"senha": "[MASKED]"
+}
+--------------------------------------------------
+[15:38:06] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Content-Length: [125]
+  Content-Type: [application/json]
+  Host: [localhost:8080]
+  User-Agent: [insomnia/13.3.1]
+- Payload:
+  {
+	"email": "gabrielaribeirodf2006@gmail.com",
+	"senha": "[MASKED]"
+}
+--------------------------------------------------
+[15:38:19] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Content-Length: [70]
+  Content-Type: [application/json]
+  Host: [localhost:8080]
+  User-Agent: [insomnia/13.3.1]
+- Payload:
+  {
+	"email": "gabrielaribeirodf2006@gmail.com",
+	"senha": "[MASKED]"
+}
+--------------------------------------------------
+[15:48:09] GET http://localhost:8080/cadastro
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastro
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/CadastroController/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[15:48:19] POST http://localhost:8080/usuarios
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [97]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"username":"Gabriela","email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]","planoId":3}
+--------------------------------------------------
+[15:48:24] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[15:48:35] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[15:48:46] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Content-Length: [70]
+  Content-Type: [application/json]
+  Host: [localhost:8080]
+  User-Agent: [insomnia/13.3.1]
+- Payload:
+  {
+	"email": "gabrielaribeirodf2006@gmail.com",
+	"senha": "[MASKED]"
+}
+--------------------------------------------------
+[15:49:10] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Content-Length: [121]
+  Content-Type: [application/json]
+  Host: [localhost:8080]
+  User-Agent: [insomnia/13.3.1]
+- Payload:
+  {
+	"email": "gabrielaribeirodf2006@gmail.com",
+	"senha": "[MASKED]"
+}
+--------------------------------------------------
+[15:58:05] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[15:58:09] GET http://localhost:8080/cadastro
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastro
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[15:58:18] POST http://localhost:8080/usuarios
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [97]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"username":"Gabriela","email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]","planoId":3}
+--------------------------------------------------
+[15:58:26] POST http://localhost:8080/usuarios
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [97]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"username":"Gabriela","email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]","planoId":3}
+--------------------------------------------------
+[15:59:14] POST http://localhost:8080/usuarios
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [97]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"username":"Gabriela","email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]","planoId":3}
+--------------------------------------------------
+[15:59:19] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[15:59:34] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[15:59:42] GET http://localhost:8080/esqueci-minha-senha
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): recuperarSenha
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[15:59:46] POST http://localhost:8080/recuperacao/gerar
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): solicitarCodigo
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [43]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/esqueci-minha-senha]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com"}
+--------------------------------------------------
+[16:05:58] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/RecuperarController/recuperarSenha.html]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:05:58] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:06:02] GET http://localhost:8080/cadastro
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastro
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:07:00] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:07:16] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[16:11:48] GET http://localhost:8080/cadastro
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastro
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:11:52] POST http://localhost:8080/usuarios
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [97]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"username":"Gabriela","email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]","planoId":3}
+--------------------------------------------------
+[16:11:55] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:12:02] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[16:19:42] GET http://localhost:8080/cadastro
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastro
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+  x-quarkus-hot-deployment-done: [true]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:20:16] POST http://localhost:8080/usuarios
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [97]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"username":"Gabriela","email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]","planoId":3}
+--------------------------------------------------
+[16:20:19] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:20:23] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[16:33:28] GET http://localhost:8080/cadastro
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastro
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:36:21] POST http://localhost:8080/usuarios
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [97]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"username":"Gabriela","email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]","planoId":3}
+--------------------------------------------------
+[16:36:28] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:36:33] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[16:42:24] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[16:42:26] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[16:42:30] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:42:36] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[16:59:32] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:59:38] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[17:05:03] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Content-Length: [70]
+  Content-Type: [application/json]
+  Host: [localhost:8080]
+  User-Agent: [insomnia/13.3.1]
+- Payload:
+  {
+	"email": "gabrielaribeirodf2006@gmail.com",
+	"senha": "[MASKED]"
+}
+--------------------------------------------------
+[17:43:08] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:43:15] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[17:43:17] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[17:43:17] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:43:24] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:43:47] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[17:43:47] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:44:38] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:03:17] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[18:03:21] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[18:03:24] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNjYwMSwiZXhwIjoxNzkyNzAzMDAxLCJqdGkiOiJlMTM3YjYzZi1kZjkwLTRmYTQtODdjZC1hMDZiYjU4OTJmNmIifQ.mqelbote5Ru2fWCAZbj7btkY62kLiAoKS-RV9QImsEc]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:03:30] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNjYwMSwiZXhwIjoxNzkyNzAzMDAxLCJqdGkiOiJlMTM3YjYzZi1kZjkwLTRmYTQtODdjZC1hMDZiYjU4OTJmNmIifQ.mqelbote5Ru2fWCAZbj7btkY62kLiAoKS-RV9QImsEc]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[18:03:30] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNjYxMCwiZXhwIjoxNzkyNzAzMDEwLCJqdGkiOiIyYmIxZDBkNi05NmRkLTQzNzUtYjkzOS01OWI4ODgxZTI4Y2IifQ.qXBmkwpogUYWD_Al8lXjl8sJRQ3M_MIB46H7EoWl8f0]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:04:10] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNjYxMCwiZXhwIjoxNzkyNzAzMDEwLCJqdGkiOiIyYmIxZDBkNi05NmRkLTQzNzUtYjkzOS01OWI4ODgxZTI4Y2IifQ.qXBmkwpogUYWD_Al8lXjl8sJRQ3M_MIB46H7EoWl8f0]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:08:18] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNjYxMCwiZXhwIjoxNzkyNzAzMDEwLCJqdGkiOiIyYmIxZDBkNi05NmRkLTQzNzUtYjkzOS01OWI4ODgxZTI4Y2IifQ.qXBmkwpogUYWD_Al8lXjl8sJRQ3M_MIB46H7EoWl8f0]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:08:18] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNjYxMCwiZXhwIjoxNzkyNzAzMDEwLCJqdGkiOiIyYmIxZDBkNi05NmRkLTQzNzUtYjkzOS01OWI4ODgxZTI4Y2IifQ.qXBmkwpogUYWD_Al8lXjl8sJRQ3M_MIB46H7EoWl8f0]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[18:08:40] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNjYxMCwiZXhwIjoxNzkyNzAzMDEwLCJqdGkiOiIyYmIxZDBkNi05NmRkLTQzNzUtYjkzOS01OWI4ODgxZTI4Y2IifQ.qXBmkwpogUYWD_Al8lXjl8sJRQ3M_MIB46H7EoWl8f0]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[18:08:40] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNjkyMCwiZXhwIjoxNzkyNzAzMzIwLCJqdGkiOiI1NjQ5YWM3OC1kNTY3LTQ4ZDUtOTY4Yy1kZDJhYWM3YzM0NWEifQ.IPFIW9SPtZxICJACUCaZll3tL2wUEN8J55FOCSvp4Xs]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:09:11] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNjkyMCwiZXhwIjoxNzkyNzAzMzIwLCJqdGkiOiI1NjQ5YWM3OC1kNTY3LTQ4ZDUtOTY4Yy1kZDJhYWM3YzM0NWEifQ.IPFIW9SPtZxICJACUCaZll3tL2wUEN8J55FOCSvp4Xs]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:11:02] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNjkyMCwiZXhwIjoxNzkyNzAzMzIwLCJqdGkiOiI1NjQ5YWM3OC1kNTY3LTQ4ZDUtOTY4Yy1kZDJhYWM3YzM0NWEifQ.IPFIW9SPtZxICJACUCaZll3tL2wUEN8J55FOCSvp4Xs]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:11:05] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNjkyMCwiZXhwIjoxNzkyNzAzMzIwLCJqdGkiOiI1NjQ5YWM3OC1kNTY3LTQ4ZDUtOTY4Yy1kZDJhYWM3YzM0NWEifQ.IPFIW9SPtZxICJACUCaZll3tL2wUEN8J55FOCSvp4Xs]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[18:11:06] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNzA2NiwiZXhwIjoxNzkyNzAzNDY2LCJqdGkiOiJlZWY5N2ZlYi03NzM2LTQxZDktYjgyNy0wMDVmZTk5N2ViNGEifQ.8ZfwOa-gsgDKR4UWxyoORT8GDkLgG4-Mm6NwsNFEJQ0]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:12:08] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNzA2NiwiZXhwIjoxNzkyNzAzNDY2LCJqdGkiOiJlZWY5N2ZlYi03NzM2LTQxZDktYjgyNy0wMDVmZTk5N2ViNGEifQ.8ZfwOa-gsgDKR4UWxyoORT8GDkLgG4-Mm6NwsNFEJQ0]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:22:25] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNzA2NiwiZXhwIjoxNzkyNzAzNDY2LCJqdGkiOiJlZWY5N2ZlYi03NzM2LTQxZDktYjgyNy0wMDVmZTk5N2ViNGEifQ.8ZfwOa-gsgDKR4UWxyoORT8GDkLgG4-Mm6NwsNFEJQ0]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:22:28] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNzA2NiwiZXhwIjoxNzkyNzAzNDY2LCJqdGkiOiJlZWY5N2ZlYi03NzM2LTQxZDktYjgyNy0wMDVmZTk5N2ViNGEifQ.8ZfwOa-gsgDKR4UWxyoORT8GDkLgG4-Mm6NwsNFEJQ0]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[18:22:30] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNzA2NiwiZXhwIjoxNzkyNzAzNDY2LCJqdGkiOiJlZWY5N2ZlYi03NzM2LTQxZDktYjgyNy0wMDVmZTk5N2ViNGEifQ.8ZfwOa-gsgDKR4UWxyoORT8GDkLgG4-Mm6NwsNFEJQ0]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[18:22:31] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNzc1MCwiZXhwIjoxNzkyNzA0MTUwLCJqdGkiOiI1M2RlMDMyMS02NWMyLTQwMjAtOTM5OC1hMjMyYWFhODg2MzYifQ.QR8103-FyL1jWoZ_qtiF7YmfxNbdWcJbG-EqD9PXXvU]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:23:15] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNzc1MCwiZXhwIjoxNzkyNzA0MTUwLCJqdGkiOiI1M2RlMDMyMS02NWMyLTQwMjAtOTM5OC1hMjMyYWFhODg2MzYifQ.QR8103-FyL1jWoZ_qtiF7YmfxNbdWcJbG-EqD9PXXvU]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:35:04] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNzc1MCwiZXhwIjoxNzkyNzA0MTUwLCJqdGkiOiI1M2RlMDMyMS02NWMyLTQwMjAtOTM5OC1hMjMyYWFhODg2MzYifQ.QR8103-FyL1jWoZ_qtiF7YmfxNbdWcJbG-EqD9PXXvU]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:35:28] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxNzc1MCwiZXhwIjoxNzkyNzA0MTUwLCJqdGkiOiI1M2RlMDMyMS02NWMyLTQwMjAtOTM5OC1hMjMyYWFhODg2MzYifQ.QR8103-FyL1jWoZ_qtiF7YmfxNbdWcJbG-EqD9PXXvU]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[18:35:31] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxODUzMSwiZXhwIjoxNzkyNzA0OTMxLCJqdGkiOiIyYmFiOTVjMy1jYTQzLTQ2MzEtOWU4ZS0zM2ZjYmRmOTM3OTMifQ.tUpAs9H8tiDD_56vtR5tqozLvDmVsQZeCLeaJLceI0I]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:38:37] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxODUzMSwiZXhwIjoxNzkyNzA0OTMxLCJqdGkiOiIyYmFiOTVjMy1jYTQzLTQ2MzEtOWU4ZS0zM2ZjYmRmOTM3OTMifQ.tUpAs9H8tiDD_56vtR5tqozLvDmVsQZeCLeaJLceI0I]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:47:44] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxODUzMSwiZXhwIjoxNzkyNzA0OTMxLCJqdGkiOiIyYmFiOTVjMy1jYTQzLTQ2MzEtOWU4ZS0zM2ZjYmRmOTM3OTMifQ.tUpAs9H8tiDD_56vtR5tqozLvDmVsQZeCLeaJLceI0I]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[18:48:02] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxOTI2NywiZXhwIjoxNzkyNzA1NjY3LCJqdGkiOiJhZGZhYTRhOS04ZmQ2LTRiMjAtOTc1NC0zNjY3Y2U2YzRmNTIifQ.Eo7BK91YUXKSJtHtXHmEtik2LwrUvF5ZTLih1uTCMDg]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:48:07] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxOTI2NywiZXhwIjoxNzkyNzA1NjY3LCJqdGkiOiJhZGZhYTRhOS04ZmQ2LTRiMjAtOTc1NC0zNjY3Y2U2YzRmNTIifQ.Eo7BK91YUXKSJtHtXHmEtik2LwrUvF5ZTLih1uTCMDg]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[18:51:36] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxOTI4NywiZXhwIjoxNzkyNzA1Njg3LCJqdGkiOiJkOGNjNDA5Yy1lYmYxLTQwNjgtODE5Ny02NzFiZjRlMmNiNWQifQ.oSKcv4_LvIAYuhPoWrgwNDo6PQI3ZavyhcrUS22n504]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/RecuperarController/recuperarSenha.html]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[18:51:57] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYxOTI4NywiZXhwIjoxNzkyNzA1Njg3LCJqdGkiOiJkOGNjNDA5Yy1lYmYxLTQwNjgtODE5Ny02NzFiZjRlMmNiNWQifQ.oSKcv4_LvIAYuhPoWrgwNDo6PQI3ZavyhcrUS22n504]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[19:02:42] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/RecuperarController/recuperarSenha.html]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?1]
+  sec-ch-ua-platform: ["Android"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/155.0.0.0 Mobile Safari/537.36]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:03:58] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/RecuperarController/recuperarSenha.html]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?1]
+  sec-ch-ua-platform: ["Android"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/155.0.0.0 Mobile Safari/537.36]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:04:27] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?1]
+  sec-ch-ua-platform: ["Android"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/155.0.0.0 Mobile Safari/537.36]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[19:04:30] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?1]
+  sec-ch-ua-platform: ["Android"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/155.0.0.0 Mobile Safari/537.36]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[19:17:42] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYyMDI3MCwiZXhwIjoxNzkyNzA2NjcwLCJqdGkiOiI2MDc3ZWVjMi1lYjcyLTQ5ZjEtODk4Ny1iN2ZlNGQxN2I4OWYifQ.-7e1IavUnEcNiXutM7dNpUxuFRgEhKhUAOwaJbw1FHU]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/RecuperarController/recuperarSenha.html]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:17:50] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYyMDI3MCwiZXhwIjoxNzkyNzA2NjcwLCJqdGkiOiI2MDc3ZWVjMi1lYjcyLTQ5ZjEtODk4Ny1iN2ZlNGQxN2I4OWYifQ.-7e1IavUnEcNiXutM7dNpUxuFRgEhKhUAOwaJbw1FHU]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[20:32:27] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYyMTA3MSwiZXhwIjoxNzkyNzA3NDcxLCJqdGkiOiJlMjllNjRmZC0yZmE1LTRjODAtODg1NC01ZTM5MjllNjA5NDEifQ.7U2dtyrCthernVbJaHJcWkEmN-Ob7QD3JYqKXIC_r6o]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/RecuperarController/recuperarSenha.html]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[20:32:35] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYyMTA3MSwiZXhwIjoxNzkyNzA3NDcxLCJqdGkiOiJlMjllNjRmZC0yZmE1LTRjODAtODg1NC01ZTM5MjllNjA5NDEifQ.7U2dtyrCthernVbJaHJcWkEmN-Ob7QD3JYqKXIC_r6o]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[21:45:49] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYyNTU1NiwiZXhwIjoxNzkyNzExOTU2LCJqdGkiOiJlN2YzZjk2MS01ZTRmLTQyYTgtODA2MC04YzMyMjQyOTY3MDIifQ.fI38muLN4LDWcacOZVPOck5epEtuZnNrNbdRqzU0fIq_QTOMKjBWODyEkqB5T0oHtRyuYkRGXljF-znhSoI07TSPkTR4-RJxLUz9gWHOq8-mCOsu4vpZdBscsPro5Qz6v07bSXqVptpzlyeSSrcOnbpu95qfodGL3AYxZbIfA769sSv1rXhOjElMk3JoDzyJUeDNuAAAy5-kzVXhjJ8KLbNic6fFuMR7fOfY1fRX-po1fuNqF6arHcolZKF2PO2Xk3Ay-ZGtiNJCxeq0g7ysD2zMYIOdHx2BZJXreCQhRzUhxFNyKDYHYGdXFDpyiYwH6V7473eQvnO4-IRFVRXTFQ]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[21:45:51] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYyNTU1NiwiZXhwIjoxNzkyNzExOTU2LCJqdGkiOiJlN2YzZjk2MS01ZTRmLTQyYTgtODA2MC04YzMyMjQyOTY3MDIifQ.fI38muLN4LDWcacOZVPOck5epEtuZnNrNbdRqzU0fIq_QTOMKjBWODyEkqB5T0oHtRyuYkRGXljF-znhSoI07TSPkTR4-RJxLUz9gWHOq8-mCOsu4vpZdBscsPro5Qz6v07bSXqVptpzlyeSSrcOnbpu95qfodGL3AYxZbIfA769sSv1rXhOjElMk3JoDzyJUeDNuAAAy5-kzVXhjJ8KLbNic6fFuMR7fOfY1fRX-po1fuNqF6arHcolZKF2PO2Xk3Ay-ZGtiNJCxeq0g7ysD2zMYIOdHx2BZJXreCQhRzUhxFNyKDYHYGdXFDpyiYwH6V7473eQvnO4-IRFVRXTFQ]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[22:01:20] GET http://localhost:8080/cadastro
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastro
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYyOTk1MSwiZXhwIjoxNzkyNzE2MzUxLCJqdGkiOiI5YjNmNWNiMS0xYzZhLTRmODYtYjY4OC0yOGE2MWRiZmJiNTQifQ.SUp340_s5erUi8JcaKPUHAaDhyNP1BxGQBfhto5xRjoT_CEM6KgSar9KCZfgXxLOrdUUqDK-HGpKaTLJmi0QaE0i2gPF3ALhLTu3BDTPx5jY_GP3RcwikDOsjTVN9TIp3tyUHfqbYYfcjJJ1tTiETg1F8dI7mklPvx_C08DVrtA2gqUllFKwtPJnurQ48y_9_bu0uxpzo9nypqtT1O81wY7fS5IA7ycZSijK1J7FMwq1tHMQ0VKAIzygxjOhcE-kah0hzkDzy6wLxdCM4M6-IpGLCah6qDE5sOlBsuL-zP2LaQsqTYGrN_mM--rokoG24uZxUOesX5vYg0WGOX17vg]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+  x-quarkus-hot-deployment-done: [true]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[22:01:34] POST http://localhost:8080/usuarios
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [97]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYyOTk1MSwiZXhwIjoxNzkyNzE2MzUxLCJqdGkiOiI5YjNmNWNiMS0xYzZhLTRmODYtYjY4OC0yOGE2MWRiZmJiNTQifQ.SUp340_s5erUi8JcaKPUHAaDhyNP1BxGQBfhto5xRjoT_CEM6KgSar9KCZfgXxLOrdUUqDK-HGpKaTLJmi0QaE0i2gPF3ALhLTu3BDTPx5jY_GP3RcwikDOsjTVN9TIp3tyUHfqbYYfcjJJ1tTiETg1F8dI7mklPvx_C08DVrtA2gqUllFKwtPJnurQ48y_9_bu0uxpzo9nypqtT1O81wY7fS5IA7ycZSijK1J7FMwq1tHMQ0VKAIzygxjOhcE-kah0hzkDzy6wLxdCM4M6-IpGLCah6qDE5sOlBsuL-zP2LaQsqTYGrN_mM--rokoG24uZxUOesX5vYg0WGOX17vg]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"username":"Gabriela","email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]","planoId":3}
+--------------------------------------------------
+[22:01:36] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYyOTk1MSwiZXhwIjoxNzkyNzE2MzUxLCJqdGkiOiI5YjNmNWNiMS0xYzZhLTRmODYtYjY4OC0yOGE2MWRiZmJiNTQifQ.SUp340_s5erUi8JcaKPUHAaDhyNP1BxGQBfhto5xRjoT_CEM6KgSar9KCZfgXxLOrdUUqDK-HGpKaTLJmi0QaE0i2gPF3ALhLTu3BDTPx5jY_GP3RcwikDOsjTVN9TIp3tyUHfqbYYfcjJJ1tTiETg1F8dI7mklPvx_C08DVrtA2gqUllFKwtPJnurQ48y_9_bu0uxpzo9nypqtT1O81wY7fS5IA7ycZSijK1J7FMwq1tHMQ0VKAIzygxjOhcE-kah0hzkDzy6wLxdCM4M6-IpGLCah6qDE5sOlBsuL-zP2LaQsqTYGrN_mM--rokoG24uZxUOesX5vYg0WGOX17vg]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[22:01:40] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYyOTk1MSwiZXhwIjoxNzkyNzE2MzUxLCJqdGkiOiI5YjNmNWNiMS0xYzZhLTRmODYtYjY4OC0yOGE2MWRiZmJiNTQifQ.SUp340_s5erUi8JcaKPUHAaDhyNP1BxGQBfhto5xRjoT_CEM6KgSar9KCZfgXxLOrdUUqDK-HGpKaTLJmi0QaE0i2gPF3ALhLTu3BDTPx5jY_GP3RcwikDOsjTVN9TIp3tyUHfqbYYfcjJJ1tTiETg1F8dI7mklPvx_C08DVrtA2gqUllFKwtPJnurQ48y_9_bu0uxpzo9nypqtT1O81wY7fS5IA7ycZSijK1J7FMwq1tHMQ0VKAIzygxjOhcE-kah0hzkDzy6wLxdCM4M6-IpGLCah6qDE5sOlBsuL-zP2LaQsqTYGrN_mM--rokoG24uZxUOesX5vYg0WGOX17vg]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[22:14:11] GET http://localhost:8080/cadastro
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastro
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYzMDkwMCwiZXhwIjoxNzkyNzE3MzAwLCJqdGkiOiI3MzhhNTZlNi03MDU1LTQ3ZjgtOTcyYy0zYWQyMmFmYjBhOGYifQ.W1nGnJ_gTs3bF9CxWibpFU5nvEM6rdKKQxAX6stOuKsGj5PLL0iaMxz4DUT_Z96VZ74azxkDULTL52_mzGSpKXc_klNOFIrkJ3-rWdy--fL-Nc7acAIvlJFrFDAmtLa78NCjRsrFKE63wig-dvAsbM1ki55oUm1OIB9qIdcVMS7sz4leVtOfCrOPHtm_Wnld86c8wrTqEnYP6-U8zCwL6cqtw-RJAvo-hFQcOCzRovRRt6nXpwwzw_vfzuWP04jPWoC-JkKyE50qdKEPNjmQJ6Uxlq0EBBE96s2gJ7FGdqpWDvLQR9tYe28dZezBJ6mFxxntXESxVYVHww4nJxaOGw]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[22:14:43] POST http://localhost:8080/usuarios
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [97]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYzMDkwMCwiZXhwIjoxNzkyNzE3MzAwLCJqdGkiOiI3MzhhNTZlNi03MDU1LTQ3ZjgtOTcyYy0zYWQyMmFmYjBhOGYifQ.W1nGnJ_gTs3bF9CxWibpFU5nvEM6rdKKQxAX6stOuKsGj5PLL0iaMxz4DUT_Z96VZ74azxkDULTL52_mzGSpKXc_klNOFIrkJ3-rWdy--fL-Nc7acAIvlJFrFDAmtLa78NCjRsrFKE63wig-dvAsbM1ki55oUm1OIB9qIdcVMS7sz4leVtOfCrOPHtm_Wnld86c8wrTqEnYP6-U8zCwL6cqtw-RJAvo-hFQcOCzRovRRt6nXpwwzw_vfzuWP04jPWoC-JkKyE50qdKEPNjmQJ6Uxlq0EBBE96s2gJ7FGdqpWDvLQR9tYe28dZezBJ6mFxxntXESxVYVHww4nJxaOGw]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"username":"Gabriela","email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]","planoId":3}
+--------------------------------------------------
+[22:14:50] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYzMDkwMCwiZXhwIjoxNzkyNzE3MzAwLCJqdGkiOiI3MzhhNTZlNi03MDU1LTQ3ZjgtOTcyYy0zYWQyMmFmYjBhOGYifQ.W1nGnJ_gTs3bF9CxWibpFU5nvEM6rdKKQxAX6stOuKsGj5PLL0iaMxz4DUT_Z96VZ74azxkDULTL52_mzGSpKXc_klNOFIrkJ3-rWdy--fL-Nc7acAIvlJFrFDAmtLa78NCjRsrFKE63wig-dvAsbM1ki55oUm1OIB9qIdcVMS7sz4leVtOfCrOPHtm_Wnld86c8wrTqEnYP6-U8zCwL6cqtw-RJAvo-hFQcOCzRovRRt6nXpwwzw_vfzuWP04jPWoC-JkKyE50qdKEPNjmQJ6Uxlq0EBBE96s2gJ7FGdqpWDvLQR9tYe28dZezBJ6mFxxntXESxVYVHww4nJxaOGw]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[22:14:54] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYzMDkwMCwiZXhwIjoxNzkyNzE3MzAwLCJqdGkiOiI3MzhhNTZlNi03MDU1LTQ3ZjgtOTcyYy0zYWQyMmFmYjBhOGYifQ.W1nGnJ_gTs3bF9CxWibpFU5nvEM6rdKKQxAX6stOuKsGj5PLL0iaMxz4DUT_Z96VZ74azxkDULTL52_mzGSpKXc_klNOFIrkJ3-rWdy--fL-Nc7acAIvlJFrFDAmtLa78NCjRsrFKE63wig-dvAsbM1ki55oUm1OIB9qIdcVMS7sz4leVtOfCrOPHtm_Wnld86c8wrTqEnYP6-U8zCwL6cqtw-RJAvo-hFQcOCzRovRRt6nXpwwzw_vfzuWP04jPWoC-JkKyE50qdKEPNjmQJ6Uxlq0EBBE96s2gJ7FGdqpWDvLQR9tYe28dZezBJ6mFxxntXESxVYVHww4nJxaOGw]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[22:15:31] GET http://localhost:8080/cadastro
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastro
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYzMTY5NSwiZXhwIjoxNzkyNzE4MDk1LCJqdGkiOiJkOTU3Y2VmOC1hMmY5LTQ5YmMtYWVhOC0yMGNhYTc3ZmQzZjMifQ.d2dwflItMctxtPVBdAbshG_RL9UYFM9MlYOAPoJzqF-uSZKwzAtArDiCo7geNHv6B9o0kWMA0oh593QDiCPpRiucWyt18jDppCJy8LfL8a4rO25xju3pWTT5O80q_wd33JgGIlQHJqdXEzYl8fFpMsIcgd5rqxnH4tgFyfgxoZ6T7CrBjPT6rORAGEp0hJF15me1NxZk-ayQlPaKcwmcV2dDfc0lZi2SNg4klimkgGnwv9gT9SkirwBzPR5tCSQ42ud36Zsk6Eqyr5NGLbCpkprwPY_d5UaBe5-YGhjBns6fv4Lmmto37RNqfVkLeSnC7tUTRYI1hsYGOwBjj09JtA]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[22:20:14] POST http://localhost:8080/usuarios
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [97]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYzMTY5NSwiZXhwIjoxNzkyNzE4MDk1LCJqdGkiOiJkOTU3Y2VmOC1hMmY5LTQ5YmMtYWVhOC0yMGNhYTc3ZmQzZjMifQ.d2dwflItMctxtPVBdAbshG_RL9UYFM9MlYOAPoJzqF-uSZKwzAtArDiCo7geNHv6B9o0kWMA0oh593QDiCPpRiucWyt18jDppCJy8LfL8a4rO25xju3pWTT5O80q_wd33JgGIlQHJqdXEzYl8fFpMsIcgd5rqxnH4tgFyfgxoZ6T7CrBjPT6rORAGEp0hJF15me1NxZk-ayQlPaKcwmcV2dDfc0lZi2SNg4klimkgGnwv9gT9SkirwBzPR5tCSQ42ud36Zsk6Eqyr5NGLbCpkprwPY_d5UaBe5-YGhjBns6fv4Lmmto37RNqfVkLeSnC7tUTRYI1hsYGOwBjj09JtA]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"username":"Gabriela","email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]","planoId":3}
+--------------------------------------------------
+[22:21:34] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYzMTY5NSwiZXhwIjoxNzkyNzE4MDk1LCJqdGkiOiJkOTU3Y2VmOC1hMmY5LTQ5YmMtYWVhOC0yMGNhYTc3ZmQzZjMifQ.d2dwflItMctxtPVBdAbshG_RL9UYFM9MlYOAPoJzqF-uSZKwzAtArDiCo7geNHv6B9o0kWMA0oh593QDiCPpRiucWyt18jDppCJy8LfL8a4rO25xju3pWTT5O80q_wd33JgGIlQHJqdXEzYl8fFpMsIcgd5rqxnH4tgFyfgxoZ6T7CrBjPT6rORAGEp0hJF15me1NxZk-ayQlPaKcwmcV2dDfc0lZi2SNg4klimkgGnwv9gT9SkirwBzPR5tCSQ42ud36Zsk6Eqyr5NGLbCpkprwPY_d5UaBe5-YGhjBns6fv4Lmmto37RNqfVkLeSnC7tUTRYI1hsYGOwBjj09JtA]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[22:21:38] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYzMTY5NSwiZXhwIjoxNzkyNzE4MDk1LCJqdGkiOiJkOTU3Y2VmOC1hMmY5LTQ5YmMtYWVhOC0yMGNhYTc3ZmQzZjMifQ.d2dwflItMctxtPVBdAbshG_RL9UYFM9MlYOAPoJzqF-uSZKwzAtArDiCo7geNHv6B9o0kWMA0oh593QDiCPpRiucWyt18jDppCJy8LfL8a4rO25xju3pWTT5O80q_wd33JgGIlQHJqdXEzYl8fFpMsIcgd5rqxnH4tgFyfgxoZ6T7CrBjPT6rORAGEp0hJF15me1NxZk-ayQlPaKcwmcV2dDfc0lZi2SNg4klimkgGnwv9gT9SkirwBzPR5tCSQ42ud36Zsk6Eqyr5NGLbCpkprwPY_d5UaBe5-YGhjBns6fv4Lmmto37RNqfVkLeSnC7tUTRYI1hsYGOwBjj09JtA]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[23:19:08] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYzMjA5OSwiZXhwIjoxNzkyNzE4NDk5LCJqdGkiOiIyYTQ0YTQ4Yi1lM2M5LTRjNmMtYmYzNi0xODdiMWE2YTlmNzkifQ.nEYvJDQs1X8RkvVE5ToiSMJmab4k_cHw2u48EWlhhE2yNaDFWJsuOlfdcYp-bFox2kBxm_WEPCb3J5MYeMOdNh0VyOZ-_ndhSKMZMDlLEiQ58WOC9k_8xr-cPa1ENMpSoAiPR3hGMCZWQiLMvmgDjxS7rVmpqG4HR4BA7qDzAtsThRMaaq4ULvPstws5TxKuxZeeL-r0wuAlgvw7kdRxV3yRFGIWNzuGKHj7KIpKB05_AMmpypt6vHC7yp9lOwUdD0rjsX14zXB1Rtg9IHfMGOeSfoaka7MUgcH5sRym1JEYzrTsQ2skVhE6nedlXiEUVIo1Pu3M-Nr39Gv1Pt7EEA]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[23:19:10] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJVU0VSIl0sImlhdCI6MTc5MjYzMjA5OSwiZXhwIjoxNzkyNzE4NDk5LCJqdGkiOiIyYTQ0YTQ4Yi1lM2M5LTRjNmMtYmYzNi0xODdiMWE2YTlmNzkifQ.nEYvJDQs1X8RkvVE5ToiSMJmab4k_cHw2u48EWlhhE2yNaDFWJsuOlfdcYp-bFox2kBxm_WEPCb3J5MYeMOdNh0VyOZ-_ndhSKMZMDlLEiQ58WOC9k_8xr-cPa1ENMpSoAiPR3hGMCZWQiLMvmgDjxS7rVmpqG4HR4BA7qDzAtsThRMaaq4ULvPstws5TxKuxZeeL-r0wuAlgvw7kdRxV3yRFGIWNzuGKHj7KIpKB05_AMmpypt6vHC7yp9lOwUdD0rjsX14zXB1Rtg9IHfMGOeSfoaka7MUgcH5sRym1JEYzrTsQ2skVhE6nedlXiEUVIo1Pu3M-Nr39Gv1Pt7EEA]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[23:35:09] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?1]
+  sec-ch-ua-platform: ["Android"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [cross-site]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/155.0.0.0 Mobile Safari/537.36]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[23:36:35] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?1]
+  sec-ch-ua-platform: ["Android"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/155.0.0.0 Mobile Safari/537.36]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------

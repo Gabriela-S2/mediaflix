@@ -1,0 +1,303 @@
+[00:01:39] POST http://localhost:8080/filmes
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [292]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJBRE1JTiJdLCJpYXQiOjE3OTI2Mzc5MjYsImV4cCI6MTc5MjcyNDMyNiwianRpIjoiYTdkOTAwMzYtMjI0MS00YjY3LWE0Y2YtNDA1NmVkMzkzM2NkIn0.k7KC3hpghNcl3K5r02zVjbK06l5N3zQpsIbjBeiQx44YjuLh7XsOYW0OsjLVCaxqS_DB0gBNrD5Jd797WBRvzbXVIFgasbN__cmZ51-vOCqzLhnGP6wImZ1nK4c0ZoR9rtnHbwQIMimmogV2UxG--3fF9uoF2bTw1A_AoC2Qb3QTM6Aqsca4kzggdizbF1pC9cxR1-DE29thP7Kqmk3VRati8hT8nxulik58N6n0W6gZTzToPSjgHXqLeZTJNjNu25JynPvbVdCEehRMDHtwR7UAN45E1pnzqzG1AdGF0laqOvo6pGsoHCQpYqplhlTYYAbwJKkeB6Sz4sWzGASCvQ]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"titulo":"Teste filme Premium","descricao":"aaaasdsksddfksbfkafhdfvcshbhcvsjkdhgvad","genero":"Ação","caminhoImagemHorizontal":"META-INF/resources/midia/horizontal_img/homem-aranha-3.webp","caminhoImagemVertical":"META-INF/resources/midia/vertical_img/homem-aranha-3.jpg","plano":{"id":3}}
+--------------------------------------------------
+[00:09:07] POST http://localhost:8080/filmes
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [292]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJBRE1JTiJdLCJpYXQiOjE3OTI2Mzc5MjYsImV4cCI6MTc5MjcyNDMyNiwianRpIjoiYTdkOTAwMzYtMjI0MS00YjY3LWE0Y2YtNDA1NmVkMzkzM2NkIn0.k7KC3hpghNcl3K5r02zVjbK06l5N3zQpsIbjBeiQx44YjuLh7XsOYW0OsjLVCaxqS_DB0gBNrD5Jd797WBRvzbXVIFgasbN__cmZ51-vOCqzLhnGP6wImZ1nK4c0ZoR9rtnHbwQIMimmogV2UxG--3fF9uoF2bTw1A_AoC2Qb3QTM6Aqsca4kzggdizbF1pC9cxR1-DE29thP7Kqmk3VRati8hT8nxulik58N6n0W6gZTzToPSjgHXqLeZTJNjNu25JynPvbVdCEehRMDHtwR7UAN45E1pnzqzG1AdGF0laqOvo6pGsoHCQpYqplhlTYYAbwJKkeB6Sz4sWzGASCvQ]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"titulo":"Teste filme Premium","descricao":"aaaasdsksddfksbfkafhdfvcshbhcvsjkdhgvad","genero":"Ação","caminhoImagemHorizontal":"META-INF/resources/midia/horizontal_img/homem-aranha-3.webp","caminhoImagemVertical":"META-INF/resources/midia/vertical_img/homem-aranha-3.jpg","plano":{"id":3}}
+--------------------------------------------------
+[00:09:14] GET http://localhost:8080/admin/filmes
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): paginaAdmin
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJBRE1JTiJdLCJpYXQiOjE3OTI2Mzc5MjYsImV4cCI6MTc5MjcyNDMyNiwianRpIjoiYTdkOTAwMzYtMjI0MS00YjY3LWE0Y2YtNDA1NmVkMzkzM2NkIn0.k7KC3hpghNcl3K5r02zVjbK06l5N3zQpsIbjBeiQx44YjuLh7XsOYW0OsjLVCaxqS_DB0gBNrD5Jd797WBRvzbXVIFgasbN__cmZ51-vOCqzLhnGP6wImZ1nK4c0ZoR9rtnHbwQIMimmogV2UxG--3fF9uoF2bTw1A_AoC2Qb3QTM6Aqsca4kzggdizbF1pC9cxR1-DE29thP7Kqmk3VRati8hT8nxulik58N6n0W6gZTzToPSjgHXqLeZTJNjNu25JynPvbVdCEehRMDHtwR7UAN45E1pnzqzG1AdGF0laqOvo6pGsoHCQpYqplhlTYYAbwJKkeB6Sz4sWzGASCvQ]
+  DNT: [1]
+  Host: [localhost:8080]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [none]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[00:09:15] GET http://localhost:8080/filmes/todos
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): listarTodosAdmin
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJBRE1JTiJdLCJpYXQiOjE3OTI2Mzc5MjYsImV4cCI6MTc5MjcyNDMyNiwianRpIjoiYTdkOTAwMzYtMjI0MS00YjY3LWE0Y2YtNDA1NmVkMzkzM2NkIn0.k7KC3hpghNcl3K5r02zVjbK06l5N3zQpsIbjBeiQx44YjuLh7XsOYW0OsjLVCaxqS_DB0gBNrD5Jd797WBRvzbXVIFgasbN__cmZ51-vOCqzLhnGP6wImZ1nK4c0ZoR9rtnHbwQIMimmogV2UxG--3fF9uoF2bTw1A_AoC2Qb3QTM6Aqsca4kzggdizbF1pC9cxR1-DE29thP7Kqmk3VRati8hT8nxulik58N6n0W6gZTzToPSjgHXqLeZTJNjNu25JynPvbVdCEehRMDHtwR7UAN45E1pnzqzG1AdGF0laqOvo6pGsoHCQpYqplhlTYYAbwJKkeB6Sz4sWzGASCvQ]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[00:09:23] POST http://localhost:8080/filmes
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [272]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJBRE1JTiJdLCJpYXQiOjE3OTI2Mzc5MjYsImV4cCI6MTc5MjcyNDMyNiwianRpIjoiYTdkOTAwMzYtMjI0MS00YjY3LWE0Y2YtNDA1NmVkMzkzM2NkIn0.k7KC3hpghNcl3K5r02zVjbK06l5N3zQpsIbjBeiQx44YjuLh7XsOYW0OsjLVCaxqS_DB0gBNrD5Jd797WBRvzbXVIFgasbN__cmZ51-vOCqzLhnGP6wImZ1nK4c0ZoR9rtnHbwQIMimmogV2UxG--3fF9uoF2bTw1A_AoC2Qb3QTM6Aqsca4kzggdizbF1pC9cxR1-DE29thP7Kqmk3VRati8hT8nxulik58N6n0W6gZTzToPSjgHXqLeZTJNjNu25JynPvbVdCEehRMDHtwR7UAN45E1pnzqzG1AdGF0laqOvo6pGsoHCQpYqplhlTYYAbwJKkeB6Sz4sWzGASCvQ]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"titulo":"Teste filme Premium","descricao":"asgzdggfhzghjxhjkhc","genero":"Ação","caminhoImagemHorizontal":"META-INF/resources/midia/horizontal_img/homem-aranha-3.webp","caminhoImagemVertical":"META-INF/resources/midia/vertical_img/homem-aranha-3.jpg","plano":{"id":1}}
+--------------------------------------------------
+[00:12:20] POST http://localhost:8080/filmes
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [272]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJBRE1JTiJdLCJpYXQiOjE3OTI2Mzc5MjYsImV4cCI6MTc5MjcyNDMyNiwianRpIjoiYTdkOTAwMzYtMjI0MS00YjY3LWE0Y2YtNDA1NmVkMzkzM2NkIn0.k7KC3hpghNcl3K5r02zVjbK06l5N3zQpsIbjBeiQx44YjuLh7XsOYW0OsjLVCaxqS_DB0gBNrD5Jd797WBRvzbXVIFgasbN__cmZ51-vOCqzLhnGP6wImZ1nK4c0ZoR9rtnHbwQIMimmogV2UxG--3fF9uoF2bTw1A_AoC2Qb3QTM6Aqsca4kzggdizbF1pC9cxR1-DE29thP7Kqmk3VRati8hT8nxulik58N6n0W6gZTzToPSjgHXqLeZTJNjNu25JynPvbVdCEehRMDHtwR7UAN45E1pnzqzG1AdGF0laqOvo6pGsoHCQpYqplhlTYYAbwJKkeB6Sz4sWzGASCvQ]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"titulo":"Teste filme Premium","descricao":"asgzdggfhzghjxhjkhc","genero":"Ação","caminhoImagemHorizontal":"META-INF/resources/midia/horizontal_img/homem-aranha-3.webp","caminhoImagemVertical":"META-INF/resources/midia/vertical_img/homem-aranha-3.jpg","plano":{"id":1}}
+--------------------------------------------------
+[00:12:25] GET http://localhost:8080/filmes/todos
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): listarTodosAdmin
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJBRE1JTiJdLCJpYXQiOjE3OTI2Mzc5MjYsImV4cCI6MTc5MjcyNDMyNiwianRpIjoiYTdkOTAwMzYtMjI0MS00YjY3LWE0Y2YtNDA1NmVkMzkzM2NkIn0.k7KC3hpghNcl3K5r02zVjbK06l5N3zQpsIbjBeiQx44YjuLh7XsOYW0OsjLVCaxqS_DB0gBNrD5Jd797WBRvzbXVIFgasbN__cmZ51-vOCqzLhnGP6wImZ1nK4c0ZoR9rtnHbwQIMimmogV2UxG--3fF9uoF2bTw1A_AoC2Qb3QTM6Aqsca4kzggdizbF1pC9cxR1-DE29thP7Kqmk3VRati8hT8nxulik58N6n0W6gZTzToPSjgHXqLeZTJNjNu25JynPvbVdCEehRMDHtwR7UAN45E1pnzqzG1AdGF0laqOvo6pGsoHCQpYqplhlTYYAbwJKkeB6Sz4sWzGASCvQ]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[00:12:36] GET http://localhost:8080/cadastro
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastro
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJBRE1JTiJdLCJpYXQiOjE3OTI2Mzc5MjYsImV4cCI6MTc5MjcyNDMyNiwianRpIjoiYTdkOTAwMzYtMjI0MS00YjY3LWE0Y2YtNDA1NmVkMzkzM2NkIn0.k7KC3hpghNcl3K5r02zVjbK06l5N3zQpsIbjBeiQx44YjuLh7XsOYW0OsjLVCaxqS_DB0gBNrD5Jd797WBRvzbXVIFgasbN__cmZ51-vOCqzLhnGP6wImZ1nK4c0ZoR9rtnHbwQIMimmogV2UxG--3fF9uoF2bTw1A_AoC2Qb3QTM6Aqsca4kzggdizbF1pC9cxR1-DE29thP7Kqmk3VRati8hT8nxulik58N6n0W6gZTzToPSjgHXqLeZTJNjNu25JynPvbVdCEehRMDHtwR7UAN45E1pnzqzG1AdGF0laqOvo6pGsoHCQpYqplhlTYYAbwJKkeB6Sz4sWzGASCvQ]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[00:12:56] POST http://localhost:8080/usuarios
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [96]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJBRE1JTiJdLCJpYXQiOjE3OTI2Mzc5MjYsImV4cCI6MTc5MjcyNDMyNiwianRpIjoiYTdkOTAwMzYtMjI0MS00YjY3LWE0Y2YtNDA1NmVkMzkzM2NkIn0.k7KC3hpghNcl3K5r02zVjbK06l5N3zQpsIbjBeiQx44YjuLh7XsOYW0OsjLVCaxqS_DB0gBNrD5Jd797WBRvzbXVIFgasbN__cmZ51-vOCqzLhnGP6wImZ1nK4c0ZoR9rtnHbwQIMimmogV2UxG--3fF9uoF2bTw1A_AoC2Qb3QTM6Aqsca4kzggdizbF1pC9cxR1-DE29thP7Kqmk3VRati8hT8nxulik58N6n0W6gZTzToPSjgHXqLeZTJNjNu25JynPvbVdCEehRMDHtwR7UAN45E1pnzqzG1AdGF0laqOvo6pGsoHCQpYqplhlTYYAbwJKkeB6Sz4sWzGASCvQ]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"username":"Premium","email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]","planoId":3}
+--------------------------------------------------
+[00:13:13] POST http://localhost:8080/usuarios
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastrar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [82]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJBRE1JTiJdLCJpYXQiOjE3OTI2Mzc5MjYsImV4cCI6MTc5MjcyNDMyNiwianRpIjoiYTdkOTAwMzYtMjI0MS00YjY3LWE0Y2YtNDA1NmVkMzkzM2NkIn0.k7KC3hpghNcl3K5r02zVjbK06l5N3zQpsIbjBeiQx44YjuLh7XsOYW0OsjLVCaxqS_DB0gBNrD5Jd797WBRvzbXVIFgasbN__cmZ51-vOCqzLhnGP6wImZ1nK4c0ZoR9rtnHbwQIMimmogV2UxG--3fF9uoF2bTw1A_AoC2Qb3QTM6Aqsca4kzggdizbF1pC9cxR1-DE29thP7Kqmk3VRati8hT8nxulik58N6n0W6gZTzToPSjgHXqLeZTJNjNu25JynPvbVdCEehRMDHtwR7UAN45E1pnzqzG1AdGF0laqOvo6pGsoHCQpYqplhlTYYAbwJKkeB6Sz4sWzGASCvQ]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"username":"Premium","email":"premium@gmail.com","senha":"[MASKED]","planoId":3}
+--------------------------------------------------
+[00:13:16] GET http://localhost:8080/login
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJBRE1JTiJdLCJpYXQiOjE3OTI2Mzc5MjYsImV4cCI6MTc5MjcyNDMyNiwianRpIjoiYTdkOTAwMzYtMjI0MS00YjY3LWE0Y2YtNDA1NmVkMzkzM2NkIn0.k7KC3hpghNcl3K5r02zVjbK06l5N3zQpsIbjBeiQx44YjuLh7XsOYW0OsjLVCaxqS_DB0gBNrD5Jd797WBRvzbXVIFgasbN__cmZ51-vOCqzLhnGP6wImZ1nK4c0ZoR9rtnHbwQIMimmogV2UxG--3fF9uoF2bTw1A_AoC2Qb3QTM6Aqsca4kzggdizbF1pC9cxR1-DE29thP7Kqmk3VRati8hT8nxulik58N6n0W6gZTzToPSjgHXqLeZTJNjNu25JynPvbVdCEehRMDHtwR7UAN45E1pnzqzG1AdGF0laqOvo6pGsoHCQpYqplhlTYYAbwJKkeB6Sz4sWzGASCvQ]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[00:13:27] POST http://localhost:8080/usuarios/login
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [49]
+  Content-Type: [application/json]
+  Cookie: [jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL21lZGlhZmxpeC5pZmcuZWR1LmJyIiwidXBuIjoiZ2FicmllbGFyaWJlaXJvZGYyMDA2QGdtYWlsLmNvbSIsImdyb3VwcyI6WyJBRE1JTiJdLCJpYXQiOjE3OTI2Mzc5MjYsImV4cCI6MTc5MjcyNDMyNiwianRpIjoiYTdkOTAwMzYtMjI0MS00YjY3LWE0Y2YtNDA1NmVkMzkzM2NkIn0.k7KC3hpghNcl3K5r02zVjbK06l5N3zQpsIbjBeiQx44YjuLh7XsOYW0OsjLVCaxqS_DB0gBNrD5Jd797WBRvzbXVIFgasbN__cmZ51-vOCqzLhnGP6wImZ1nK4c0ZoR9rtnHbwQIMimmogV2UxG--3fF9uoF2bTw1A_AoC2Qb3QTM6Aqsca4kzggdizbF1pC9cxR1-DE29thP7Kqmk3VRati8hT8nxulik58N6n0W6gZTzToPSjgHXqLeZTJNjNu25JynPvbVdCEehRMDHtwR7UAN45E1pnzqzG1AdGF0laqOvo6pGsoHCQpYqplhlTYYAbwJKkeB6Sz4sWzGASCvQ]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Microsoft Edge";v="155", "Chromium";v="155", "Not(A:Brand";v="24"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0]
+- Payload:
+  {"email":"Premium@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------

@@ -1,6 +1,6 @@
 package br.com.ifg.filter;
 
-import br.com.ifg.model.LogUso;
+import br.com.ifg.model.entity.LogUso;
 import br.com.ifg.service.LogArquivoService;
 import io.vertx.core.http.HttpServerRequest;
 import jakarta.inject.Inject;

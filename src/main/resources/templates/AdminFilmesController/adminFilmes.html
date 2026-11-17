@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Admin - MediaFlix</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #141414; color: #fff; margin: 0; padding: 20px; }
+        .container { max-width: 1000px; margin: auto; background: #222; padding: 20px; border-radius: 8px; }
+        h1, h2 { color: #e50914; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 10px; border: 1px solid #444; text-align: left; }
+        th { background-color: #333; }
+        input, select, textarea { width: 100%; padding: 8px; margin-bottom: 10px; background: #333; color: white; border: 1px solid #555; border-radius: 4px; }
+        button { background-color: #e50914; color: white; border: none; padding: 10px 15px; cursor: pointer; border-radius: 4px; font-weight: bold; }
+        button:hover { background-color: #f40612; }
+        .btn-edit { background-color: #0071eb; }
+        .btn-delete { background-color: #b9090b; }
+        .form-container { display: flex; gap: 15px; flex-wrap: wrap; }
+        .form-group { flex: 1 1 48%; }
+        #search-bar { width: 100%; max-width: 400px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Gestão de Filmes</h1>
+
+    <h2>Adicionar / Editar Filme</h2>
+    <form id="filmeForm">
+        <input type="hidden" id="filmeId">
+        <div class="form-container">
+            <div class="form-group">
+                <label>Título:</label>
+                <input type="text" id="titulo" required>
+            </div>
+            <div class="form-group">
+                <label>Gênero:</label>
+                <input type="text" id="genero" required>
+            </div>
+            <div class="form-group" style="flex: 1 1 100%;">
+                <label>Descrição:</label>
+                <textarea id="descricao" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>URL Imagem Horizontal:</label>
+                <input type="text" id="imgHoriz">
+            </div>
+            <div class="form-group">
+                <label>URL Imagem Vertical:</label>
+                <input type="text" id="imgVert">
+            </div>
+            <div class="form-group">
+                <label>Plano Exigido (ID):</label>
+                <select id="planoId" required>
+                    <option value="1">Básico</option>
+                    <option value="2">Padrão</option>
+                    <option value="3">Premium</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" id="btnSalvar">Salvar Filme</button>
+        <button type="button" onclick="limparFormulario()" style="background-color: #555;">Cancelar</button>
+    </form>
+
+    <hr style="border-color: #444; margin: 30px 0;">
+
+    <h2>Lista de Filmes</h2>
+    <input type="text" id="search-bar" placeholder="Pesquisar por título..." onkeyup="filtrarFilmes()">
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Gênero</th>
+            <th>Plano</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody id="tabela-filmes">
+        <!-- Preenchido via JS -->
+        </tbody>
+    </table>
+</div>
+
+<script src="/js/admin.js"></script>
+</body>
+</html>

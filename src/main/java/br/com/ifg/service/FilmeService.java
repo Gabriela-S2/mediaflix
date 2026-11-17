@@ -1,10 +1,11 @@
 package br.com.ifg.service;
 
-import br.com.ifg.dao.FilmeDAO;
-import br.com.ifg.dao.UsuarioDAO;
-import br.com.ifg.dto.FilmeResponseDTO;
-import br.com.ifg.model.Filme;
-import br.com.ifg.model.Usuario;
+import br.com.ifg.model.dao.FilmeDAO;
+import br.com.ifg.model.dao.UsuarioDAO;
+import br.com.ifg.model.dto.FilmeResponseDTO;
+import br.com.ifg.model.entity.Filme;
+import br.com.ifg.model.entity.Plano;
+import br.com.ifg.model.entity.Usuario;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
@@ -36,11 +37,13 @@ public class FilmeService {
             throw new RuntimeException("Utilizador não encontrado na base de dados.");
         }
 
-        // Exemplo de filtro baseado no plano:
-        // Adapte a query caso a classe Plano tenha um atributo "nivel" ou "id" de hierarquia.
         List<Filme> filmesDb = filmeDAO.listAll();
 
+        // Filtra os filmes: mostra apenas os filmes sem restrição de plano
+        // ou cujo nível do plano seja inferior ou igual ao plano do utilizador.
         return filmesDb.stream()
+                .filter(filme -> filme.getPlano() == null ||
+                        (usuario.getPlano() != null && filme.getPlano().getId() <= usuario.getPlano().getId()))
                 .map(this::converterParaDTO)
                 .collect(Collectors.toList());
     }
@@ -61,6 +64,12 @@ public class FilmeService {
 
     @Transactional
     public FilmeResponseDTO cadastrar(Filme filme) {
+        // Busca a referência gerenciada do Plano no banco de dados antes de salvar
+        if (filme.getPlano() != null && filme.getPlano().getId() != null) {
+            Plano planoGerenciado = filmeDAO.getEntityManager().getReference(Plano.class, filme.getPlano().getId());
+            filme.setPlano(planoGerenciado);
+        }
+
         filmeDAO.persist(filme);
         return converterParaDTO(filme);
     }
@@ -69,13 +78,17 @@ public class FilmeService {
     public FilmeResponseDTO atualizar(Long id, Filme filmeAtualizado) {
         Filme filme = buscarPorId(id);
 
-        // Setters correspondentes aos atributos reais da sua classe Filme.java
         filme.setTitulo(filmeAtualizado.getTitulo());
         filme.setDescricao(filmeAtualizado.getDescricao());
         filme.setGenero(filmeAtualizado.getGenero());
         filme.setCaminhoImagemHorizontal(filmeAtualizado.getCaminhoImagemHorizontal());
         filme.setCaminhoImagemVertical(filmeAtualizado.getCaminhoImagemVertical());
-        filme.setPlano(filmeAtualizado.getPlano());
+
+        // Atualiza a referência do Plano
+        if (filmeAtualizado.getPlano() != null && filmeAtualizado.getPlano().getId() != null) {
+            Plano planoGerenciado = filmeDAO.getEntityManager().getReference(Plano.class, filmeAtualizado.getPlano().getId());
+            filme.setPlano(planoGerenciado);
+        }
 
         return converterParaDTO(filme);
     }
@@ -96,8 +109,6 @@ public class FilmeService {
         dto.setCaminhoImagemHorizontal(filme.getCaminhoImagemHorizontal());
         dto.setCaminhoImagemVertical(filme.getCaminhoImagemVertical());
 
-        // Evite mapear a entidade Plano inteira no DTO para não vazar a estrutura do banco.
-        // Mapeie apenas o nome do plano ou o ID, caso necessário.
         if (filme.getPlano() != null) {
             dto.setPlanoId(filme.getPlano().getId());
         }

@@ -1,6 +1,6 @@
 package br.com.ifg.service;
 
-import br.com.ifg.model.LogUso;
+import br.com.ifg.model.entity.LogUso;
 import jakarta.enterprise.context.ApplicationScoped;
 import java.io.IOException;
 import java.nio.file.Files;
