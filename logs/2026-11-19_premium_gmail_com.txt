@@ -2100,3 +2100,2165 @@
 - Payload:
   Sem Payload
 --------------------------------------------------
+[16:56:23] GET http://localhost:8080/admin/filmes
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): paginaAdmin
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:56:23] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:56:23] GET http://localhost:8080/filmes/todos
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): listarTodosAdmin
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:57:52] PUT http://localhost:8080/filmes/4
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): atualizar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [226]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  {"titulo":"Teste filme Premium","descricao":"Se você consegue ver isso, você está usando uma conta premium.","genero":"Ação","caminhoImagemHorizontal":"homem-aranha-3","caminhoImagemVertical":"homem-aranha-3","planoId":1}
+--------------------------------------------------
+[16:57:52] POST http://localhost:8080/filmes/4/imagens
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): uploadImagens
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [392779]
+  Content-Type: [multipart/form-data; boundary=----WebKitFormBoundaryOIvc2BfOAPF0pzAg]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  [Arquivo Binário - Multipart Upload]
+--------------------------------------------------
+[16:57:59] GET http://localhost:8080/filmes/todos
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): listarTodosAdmin
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:57:59] GET http://localhost:8080/filmes/imagem/horizontal/teste-filme-premium.webp?t=1795118279628
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:57:59] GET http://localhost:8080/filmes/imagem/vertical/teste-filme-premium.png?t=1795118279628
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:58:07] GET http://localhost:8080/index
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?1]
+  sec-ch-ua-platform: ["Android"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/157.0.0.0 Mobile Safari/537.36]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:58:08] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?1]
+  sec-ch-ua-platform: ["Android"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/157.0.0.0 Mobile Safari/537.36]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:58:08] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?1]
+  sec-ch-ua-platform: ["Android"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/157.0.0.0 Mobile Safari/537.36]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:58:08] GET http://localhost:8080/filmes
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): listarFilmesPermitidos
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?1]
+  sec-ch-ua-platform: ["Android"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/157.0.0.0 Mobile Safari/537.36]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:58:09] GET http://localhost:8080/filmes/imagem/horizontal/teste-filme-premium.webp
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?1]
+  sec-ch-ua-platform: ["Android"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/157.0.0.0 Mobile Safari/537.36]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:58:09] GET http://localhost:8080/filmes/imagem/vertical/teste-filme-premium.png
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?1]
+  sec-ch-ua-platform: ["Android"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/157.0.0.0 Mobile Safari/537.36]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:58:56] GET http://localhost:8080/assistir?id=4
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): watch
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:58:57] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:58:57] GET http://localhost:8080/filmes/4
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarPorId
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:58:57] GET http://localhost:8080/historico/4
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarProgresso
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:58:59] POST http://localhost:8080/historico
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): salvarProgresso
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [32]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  {"filmeId":4,"tempoAssistido":5}
+--------------------------------------------------
+[16:59:04] POST http://localhost:8080/historico
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): salvarProgresso
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [33]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  {"filmeId":4,"tempoAssistido":10}
+--------------------------------------------------
+[16:59:09] POST http://localhost:8080/historico
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): salvarProgresso
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [33]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  {"filmeId":4,"tempoAssistido":15}
+--------------------------------------------------
+[16:59:35] GET http://localhost:8080/index
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:59:35] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:59:35] GET http://localhost:8080/filmes
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): listarFilmesPermitidos
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:59:35] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:59:35] GET http://localhost:8080/filmes/imagem/vertical/teste-filme-premium.png
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[16:59:35] GET http://localhost:8080/filmes/imagem/horizontal/teste-filme-premium.webp
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:00:52] GET http://localhost:8080/assistir?id=4
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): watch
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:00:52] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:00:53] GET http://localhost:8080/filmes/4
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarPorId
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:00:53] GET http://localhost:8080/historico/4
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarProgresso
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:00:57] POST http://localhost:8080/historico
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): salvarProgresso
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [33]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  {"filmeId":4,"tempoAssistido":15}
+--------------------------------------------------
+[17:01:02] POST http://localhost:8080/historico
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): salvarProgresso
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [33]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  {"filmeId":4,"tempoAssistido":20}
+--------------------------------------------------
+[17:01:07] POST http://localhost:8080/historico
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): salvarProgresso
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [33]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  {"filmeId":4,"tempoAssistido":25}
+--------------------------------------------------
+[17:03:59] GET http://localhost:8080/index
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:04:00] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:04:00] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:04:00] GET http://localhost:8080/filmes
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): listarFilmesPermitidos
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:04:00] GET http://localhost:8080/filmes/imagem/horizontal/teste-filme-premium.webp
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:04:00] GET http://localhost:8080/filmes/imagem/vertical/teste-filme-premium.png
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:31] GET http://localhost:8080/filmes
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): listarFilmesPermitidos
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:31] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:31] GET http://localhost:8080/filmes/imagem/horizontal/teste-filme-premium.webp
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:31] GET http://localhost:8080/filmes/imagem/vertical/teste-filme-premium.png
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:35] GET http://localhost:8080/index
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:36] GET http://localhost:8080/filmes/todos
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): listarTodosAdmin
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:36] GET http://localhost:8080/filmes/imagem/vertical/teste-filme-premium.png?t=1795120236335
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:36] GET http://localhost:8080/filmes/imagem/horizontal/teste-filme-premium.webp?t=1795120236335
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:36] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:36] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:36] GET http://localhost:8080/filmes/catalogo
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterCatalogoOrganizado
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:36] GET http://localhost:8080/admin/filmes
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): paginaAdmin
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:37] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:37] GET http://localhost:8080/filmes/todos
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): listarTodosAdmin
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:37] GET http://localhost:8080/filmes/imagem/horizontal/teste-filme-premium.webp?t=1795120237211
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:37] GET http://localhost:8080/filmes/imagem/vertical/teste-filme-premium.png?t=1795120237211
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:52] GET http://localhost:8080/filmes/imagem/vertical/teste-filme-premium.png?t=1795120252297
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:30:52] GET http://localhost:8080/filmes/imagem/horizontal/teste-filme-premium.webp?t=1795120252297
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:31:32] PUT http://localhost:8080/filmes/4
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): atualizar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [324]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  {"titulo":"Teste filme Premium","descricao":"Se você consegue ver isso, você está usando uma conta premium.","tipo":"FILME","generos":["Ação","Fantasia"],"caminhoImagemHorizontal":"/filmes/imagem/horizontal/teste-filme-premium.webp","caminhoImagemVertical":"/filmes/imagem/vertical/teste-filme-premium.png","planoId":1}
+--------------------------------------------------
+[17:31:34] GET http://localhost:8080/filmes/todos
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): listarTodosAdmin
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:31:34] GET http://localhost:8080/filmes/imagem/horizontal/teste-filme-premium.webp?t=1795120294444
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:31:34] GET http://localhost:8080/filmes/imagem/vertical/teste-filme-premium.png?t=1795120294444
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:31:41] GET http://localhost:8080/filmes/imagem/vertical/teste-filme-premium.png?t=1795120301038
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:31:41] GET http://localhost:8080/filmes/imagem/horizontal/teste-filme-premium.webp?t=1795120301038
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:31:56] PUT http://localhost:8080/filmes/4
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): atualizar
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [324]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  {"titulo":"Teste filme Básico","descricao":"Se você consegue ver isso, você está usando uma conta básica.","tipo":"FILME","generos":["Ação","Fantasia"],"caminhoImagemHorizontal":"/filmes/imagem/horizontal/teste-filme-premium.webp","caminhoImagemVertical":"/filmes/imagem/vertical/teste-filme-premium.png","planoId":1}
+--------------------------------------------------
+[17:31:57] GET http://localhost:8080/filmes/todos
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): listarTodosAdmin
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:31:57] GET http://localhost:8080/filmes/imagem/horizontal/teste-filme-premium.webp?t=1795120317745
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:31:57] GET http://localhost:8080/filmes/imagem/vertical/teste-filme-premium.png?t=1795120317745
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:01] GET http://localhost:8080/filmes/imagem/vertical/teste-filme-premium.png
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:01] GET http://localhost:8080/filmes/imagem/horizontal/teste-filme-premium.webp
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:04] GET http://localhost:8080/index
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:05] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:05] GET http://localhost:8080/filmes/catalogo
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterCatalogoOrganizado
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:05] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:05] GET http://localhost:8080/filmes/imagem/horizontal/teste-filme-premium.webp
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:05] GET http://localhost:8080/filmes/imagem/vertical/teste-filme-premium.png
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:17] GET http://localhost:8080/assistir?id=4
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): watch
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:17] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:17] GET http://localhost:8080/filmes/4
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarPorId
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:17] GET http://localhost:8080/filmes/4/interacao
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): consultarInteracao
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:18] GET http://localhost:8080/historico/4
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarProgresso
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:20] POST http://localhost:8080/historico
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): salvarProgresso
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [33]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  {"filmeId":4,"tempoAssistido":25}
+--------------------------------------------------
+[17:32:27] POST http://localhost:8080/filmes/4/like
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): alternarLike
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [0]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  
+--------------------------------------------------
+[17:32:30] POST http://localhost:8080/filmes/4/lista
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): alternarMinhaLista
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [0]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  
+--------------------------------------------------
+[17:32:37] GET http://localhost:8080/index
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/assistir?id=4]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:37] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:37] GET http://localhost:8080/usuarios/perfil
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:37] GET http://localhost:8080/filmes/catalogo
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): obterCatalogoOrganizado
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:37] GET http://localhost:8080/filmes/imagem/horizontal/teste-filme-premium.webp
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[17:32:37] GET http://localhost:8080/filmes/imagem/vertical/teste-filme-premium.png
+- Utilizador: premium@gmail.com
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------

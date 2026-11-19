@@ -16,42 +16,36 @@
 </header>
 
 <main class="watch-main">
-    <!-- Área do Player de Vídeo -->
     <div class="video-player-container">
         <video controls autoplay class="video-player">
-            <!-- Caminho corrigido para a raiz do servidor estático -->
             <source src="/midia/video/nggyu.mp4" type="video/mp4">
             Seu navegador não suporta o elemento de vídeo.
         </video>
     </div>
 
-    <!-- Área de Informações do Filme/Série -->
     <div class="video-info-container">
-        <h2 id="video-title">Big Buck Bunny</h2>
+        <h2 id="video-title">Carregando...</h2>
 
         <div class="video-meta">
             <span class="match">98% Relevante</span>
-            <span class="year">2008</span>
-            <span class="rating">Livre</span>
-            <span class="duration">10 min</span>
+            <span class="rating" id="video-tipo">Filme</span>
             <span class="hd">HD</span>
         </div>
 
         <div class="video-details">
             <div class="description">
-                <p>Um coelho gigante e amigável decide se vingar de três roedores mal-intencionados que estão perturbando a paz da floresta. Uma clássica animação de código aberto que testa os limites da computação gráfica.</p>
+                <p id="video-description">Carregando sinopse...</p>
 
                 <div class="action-buttons">
-                    <button class="btn-play">▶ Assistir Novamente</button>
-                    <button class="btn-round" title="Adicionar à Minha Lista">+</button>
-                    <button class="btn-round" title="Gostei">👍</button>
+                    <button type="button" class="btn-play" id="btn-replay">▶ Assistir Novamente</button>
+                    <button type="button" class="btn-round" id="btn-minha-lista" title="Adicionar à Minha Lista">+</button>
+                    <button type="button" class="btn-round" id="btn-like" title="Gostei (melhora suas recomendações)">👍</button>
                 </div>
             </div>
 
             <div class="cast-info">
-                <p><strong>Elenco:</strong> Coelho, Esquilos voadores, Borboletas</p>
-                <p><strong>Gêneros:</strong> Animação, Comédia, Curta-metragem</p>
-                <p><strong>Direção:</strong> Sacha Goedegebure</p>
+                <p><strong>Gêneros:</strong> <span id="video-genre">-</span></p>
+                <p><strong>Formato:</strong> <span id="video-formato-texto">Filme</span></p>
             </div>
         </div>
     </div>

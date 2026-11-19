@@ -1,18 +1,9 @@
 package br.com.ifg.service;
 
-import org.eclipse.microprofile.config.inject.ConfigProperty;
-import org.jboss.resteasy.reactive.multipart.FileUpload;
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.Set;
+import br.com.ifg.model.bo.UsuarioBO;
 import br.com.ifg.model.dao.PlanoDAO;
 import br.com.ifg.model.dao.UsuarioDAO;
+import br.com.ifg.model.dto.AtualizarPerfilRequestDTO;
 import br.com.ifg.model.dto.PlanoResponseDTO;
 import br.com.ifg.model.dto.UsuarioRequestDTO;
 import br.com.ifg.model.dto.UsuarioResponseDTO;
@@ -23,7 +14,19 @@ import io.smallrye.jwt.build.Jwt;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
+import org.eclipse.microprofile.config.inject.ConfigProperty;
+import org.jboss.logging.Logger;
+import org.jboss.resteasy.reactive.multipart.FileUpload;
+
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Set;
 
 @ApplicationScoped
@@ -35,24 +38,18 @@ public class UsuarioService {
     @Inject
     PlanoDAO planoDAO;
 
+    @Inject
+    UsuarioBO usuarioBO;
+
     private static final String FOTO_PADRAO = "/midia/novo_usuario.png";
-    private static final org.jboss.logging.Logger LOG = org.jboss.logging.Logger.getLogger(UsuarioService.class);
-    private static final Set<String> TIPOS_PERMITIDOS = Set.of("image/png", "image/jpeg", "image/jpg", "image/webp");
+    private static final Logger LOG = Logger.getLogger(UsuarioService.class);
 
     @ConfigProperty(name = "mediaflix.upload.dir", defaultValue = "uploads/perfis")
     String diretorioUpload;
 
-
     @Transactional
     public UsuarioResponseDTO salvarFotoPerfil(String emailLogado, FileUpload arquivo) {
-        if (arquivo == null || arquivo.uploadedFile() == null || arquivo.size() == 0) {
-            throw new IllegalArgumentException("Nenhuma imagem foi enviada.");
-        }
-
-        String contentType = arquivo.contentType();
-        if (contentType == null || !TIPOS_PERMITIDOS.contains(contentType.toLowerCase())) {
-            throw new IllegalArgumentException("Formato inválido. Envie apenas PNG, JPG ou WEBP.");
-        }
+        usuarioBO.validarUploadFotoPerfil(arquivo);
 
         Usuario usuario = usuarioDAO.buscarPorEmail(emailLogado);
         if (usuario == null) {
@@ -63,19 +60,16 @@ public class UsuarioService {
             Path pastaDestino = Paths.get(diretorioUpload).toAbsolutePath().normalize();
             Files.createDirectories(pastaDestino);
 
-            // Gera o nome no padrão imutável: <id>_<data>.png
             String dataAtual = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
             String nomeArquivo = usuario.getId() + "_" + dataAtual + ".png";
             Path caminhoCompleto = pastaDestino.resolve(nomeArquivo).normalize();
 
-            // Converte e grava a imagem em formato PNG real
             BufferedImage imagem = ImageIO.read(arquivo.uploadedFile().toFile());
             if (imagem == null) {
                 throw new IllegalArgumentException("O arquivo enviado não é uma imagem válida.");
             }
             ImageIO.write(imagem, "png", caminhoCompleto.toFile());
 
-            // Remove a foto anterior do disco se tiver sido salva em outra data
             if (usuario.getCaminhoFoto() != null && usuario.getCaminhoFoto().startsWith("/usuarios/foto/")) {
                 String arquivoAnterior = usuario.getCaminhoFoto().replace("/usuarios/foto/", "");
                 if (!arquivoAnterior.equals(nomeArquivo)) {
@@ -86,7 +80,6 @@ public class UsuarioService {
                 }
             }
 
-            // Atualiza a rota pública na entidade Usuario
             String urlPublica = "/usuarios/foto/" + nomeArquivo;
             usuario.setCaminhoFoto(urlPublica);
 
@@ -103,7 +96,6 @@ public class UsuarioService {
         Path pastaDestino = Paths.get(diretorioUpload).toAbsolutePath().normalize();
         Path arquivo = pastaDestino.resolve(nomeArquivo).normalize();
 
-        // Proteção contra Path Traversal (../)
         if (!arquivo.startsWith(pastaDestino) || !Files.exists(arquivo)) {
             throw new IllegalArgumentException("Foto de perfil não encontrada.");
         }
@@ -112,17 +104,11 @@ public class UsuarioService {
 
     @Transactional
     public UsuarioResponseDTO cadastrar(UsuarioRequestDTO dto) {
-        if (usuarioDAO.buscarPorEmail(dto.email()) != null) {
-            throw new IllegalArgumentException("Este e-mail já está cadastrado.");
-        }
-        if (usuarioDAO.buscarPorUsername(dto.username()) != null) {
-            throw new IllegalArgumentException("Este nome de usuário já está em uso.");
-        }
-
+        boolean emailEmUso = usuarioDAO.buscarPorEmail(dto.email()) != null;
+        boolean usernameEmUso = usuarioDAO.buscarPorUsername(dto.username()) != null;
         Plano plano = planoDAO.findById(dto.planoId());
-        if (plano == null) {
-            throw new IllegalArgumentException("Plano selecionado inválido.");
-        }
+
+        usuarioBO.validarNovoCadastro(dto, emailEmUso, usernameEmUso, plano);
 
         Usuario usuario = new Usuario();
         usuario.setUsername(dto.username());
@@ -138,19 +124,35 @@ public class UsuarioService {
 
     public String autenticar(String email, String senha) {
         Usuario usuario = usuarioDAO.buscarPorEmail(email);
-        if (usuario == null || !BcryptUtil.matches(senha, usuario.getSenha())) {
-            throw new SecurityException("E-mail ou senha incorretos.");
-        }
+        usuarioBO.validarCredenciais(usuario, senha);
 
-        Set<String> grupos = Boolean.TRUE.equals(usuario.getIsAdmin())
-                ? Set.of("USER", "ADMIN")
-                : Set.of("USER");
+        Set<String> grupos = usuarioBO.resolverGruposJwt(usuario);
 
         return Jwt.issuer("https://mediaflix.ifg.edu.br")
                 .upn(usuario.getEmail())
                 .groups(grupos)
                 .expiresIn(Duration.ofHours(24))
                 .sign();
+    }
+
+    public UsuarioResponseDTO buscarPerfil(String email) {
+        Usuario usuario = usuarioDAO.buscarPorEmail(email);
+        if (usuario == null) {
+            throw new IllegalArgumentException("Usuário não encontrado.");
+        }
+        return converterParaDTO(usuario);
+    }
+
+    @Transactional
+    public UsuarioResponseDTO atualizarPerfil(String emailLogado, AtualizarPerfilRequestDTO dto) {
+        Usuario usuario = usuarioDAO.buscarPorEmail(emailLogado);
+        Usuario existenteComUsername = usuarioDAO.buscarPorUsername(dto.username());
+        Plano plano = planoDAO.findById(dto.planoId());
+
+        usuarioBO.validarEAplicarAtualizacaoPerfil(usuario, dto, existenteComUsername, plano);
+
+        LOG.infof("Perfil atualizado para o usuário: %s (Plano: %s)", emailLogado, plano.getNome());
+        return converterParaDTO(usuario);
     }
 
     private UsuarioResponseDTO converterParaDTO(Usuario usuario) {
@@ -172,42 +174,5 @@ public class UsuarioService {
                 usuario.getIsAdmin(),
                 planoDTO
         );
-    }
-
-    public UsuarioResponseDTO buscarPerfil(String email) {
-        Usuario usuario = usuarioDAO.buscarPorEmail(email);
-        if (usuario == null) {
-            throw new IllegalArgumentException("Usuário não encontrado.");
-        }
-        return converterParaDTO(usuario);
-    }
-
-    @Transactional
-    public UsuarioResponseDTO atualizarPerfil(String emailLogado, br.com.ifg.model.dto.AtualizarPerfilRequestDTO dto) {
-        Usuario usuario = usuarioDAO.buscarPorEmail(emailLogado);
-        if (usuario == null) {
-            throw new IllegalArgumentException("Usuário não encontrado.");
-        }
-
-        Usuario existenteComUsername = usuarioDAO.buscarPorUsername(dto.username());
-        if (existenteComUsername != null && !existenteComUsername.getId().equals(usuario.getId())) {
-            throw new IllegalArgumentException("Este nome de usuário já está em uso.");
-        }
-
-        if (dto.caminhoFoto() != null && !dto.caminhoFoto().isBlank()) {
-            usuario.setCaminhoFoto(dto.caminhoFoto());
-        }
-
-        Plano plano = planoDAO.findById(dto.planoId());
-        if (plano == null) {
-            throw new IllegalArgumentException("Plano selecionado inválido.");
-        }
-
-        usuario.setUsername(dto.username());
-        usuario.setCaminhoFoto(dto.caminhoFoto());
-        usuario.setPlano(plano);
-
-        LOG.infof("Perfil atualizado para o usuário: %s (Plano: %s)", emailLogado, plano.getNome());
-        return converterParaDTO(usuario);
     }
 }

@@ -1,28 +1,21 @@
 const API_URL = '';
 
 function getAuthHeaders() {
-    return {
-        'Content-Type': 'application/json'
-    };
+    return { 'Content-Type': 'application/json' };
 }
 
 async function exigirAutenticacao(somenteAdmin = false) {
     try {
-        const res = await fetch(`${API_URL}/usuarios/perfil`, {
-            credentials: 'same-origin'
-        });
-
+        const res = await fetch(`${API_URL}/usuarios/perfil`, { credentials: 'same-origin' });
         if (!res.ok) {
             window.location.href = '/login';
             return null;
         }
-
         const perfil = await res.json();
         if (somenteAdmin && !perfil.isAdmin) {
             window.location.href = '/index';
             return null;
         }
-
         return perfil;
     } catch (error) {
         window.location.href = '/login';
@@ -30,9 +23,6 @@ async function exigirAutenticacao(somenteAdmin = false) {
     }
 }
 
-// ==========================================
-// FEEDBACK ASSÍNCRONO (SPINNER E TOASTS - REQ. 12)
-// ==========================================
 function inicializarUI() {
     if (!document.getElementById('loading-overlay')) {
         const loader = document.createElement('div');
@@ -61,7 +51,7 @@ function mostrarMensagem(texto, tipo = 'sucesso') {
     toast.className = `toast ${tipo}`;
     toast.innerText = texto;
     container.appendChild(toast);
-    setTimeout(() => toast.remove(), 4000);
+    setTimeout(() => toast.remove(), 3500);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -80,7 +70,7 @@ function configurarNavegacao() {
     });
 }
 
-function rotearPaginaAtual() {
+async function rotearPaginaAtual() {
     const path = window.location.pathname;
 
     if (path.includes('/login')) {
@@ -90,21 +80,19 @@ function rotearPaginaAtual() {
     } else if (path.includes('/cadastro')) {
         configurarCadastro();
     } else if (path.includes('/assistir')) {
-        if (exigirAutenticacao()) carregarDetalhesEProgressoFilme();
+        const perfil = await exigirAutenticacao();
+        if (perfil) carregarDetalhesEProgressoFilme();
     } else if (path.includes('/index') || path === '/' || path === '') {
-        if (exigirAutenticacao()) {
+        const perfil = await exigirAutenticacao();
+        if (perfil) {
             carregarAvatarUsuario();
-            carregarFilmes();
+            carregarCatalogoHome();
             configurarMenuAvatar();
             configurarPerfil();
         }
-
     }
 }
 
-// ==========================================
-// MENU AVATAR E EDIÇÃO DE PERFIL (REQ. 3)
-// ==========================================
 function configurarMenuAvatar() {
     const userMenu = document.getElementById('user-menu');
     const btnLogout = document.getElementById('btn-logout');
@@ -122,7 +110,6 @@ function configurarMenuAvatar() {
         }
     });
 
-
     if (btnLogout) {
         btnLogout.addEventListener('click', async (e) => {
             e.preventDefault();
@@ -135,69 +122,6 @@ function configurarMenuAvatar() {
     }
 }
 
-function configurarPerfil() {
-    const btnAbrir = document.getElementById('btn-abrir-perfil');
-    const btnFechar = document.getElementById('btn-fechar-perfil');
-    const modal = document.getElementById('modal-perfil');
-    const formPerfil = document.getElementById('form-perfil');
-
-    if (btnAbrir && modal) {
-        btnAbrir.addEventListener('click', async (e) => {
-            e.preventDefault();
-            setLoading(true);
-            try {
-                const res = await fetch(`${API_URL}/usuarios/perfil`, { headers: getAuthHeaders() });
-                if (res.ok) {
-                    const perfil = await res.json();
-                    document.getElementById('perfil-username').value = perfil.username || '';
-                    document.getElementById('perfil-foto').value = perfil.caminhoFoto || '';
-                    if (perfil.plano) document.getElementById('perfil-plano').value = perfil.plano.id;
-                    if (perfil.caminhoFoto) document.getElementById('avatar-btn').src = perfil.caminhoFoto;
-                    modal.classList.add('active');
-                }
-            } finally {
-                setLoading(false);
-            }
-        });
-    }
-
-    if (btnFechar && modal) {
-        btnFechar.addEventListener('click', () => modal.classList.remove('active'));
-    }
-
-    if (formPerfil) {
-        formPerfil.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            setLoading(true);
-            try {
-                const payload = {
-                    username: document.getElementById('perfil-username').value,
-                    caminhoFoto: document.getElementById('perfil-foto').value,
-                    planoId: parseInt(document.getElementById('perfil-plano').value)
-                };
-                const res = await fetch(`${API_URL}/usuarios/perfil`, {
-                    method: 'PUT',
-                    headers: getAuthHeaders(),
-                    body: JSON.stringify(payload)
-                });
-                if (res.ok) {
-                    mostrarMensagem('Perfil e plano atualizados com sucesso!');
-                    modal.classList.remove('active');
-                    carregarFilmes();
-                } else {
-                    const err = await res.json().catch(() => ({}));
-                    mostrarMensagem(err.erro || 'Erro ao atualizar perfil.', 'erro');
-                }
-            } finally {
-                setLoading(false);
-            }
-        });
-    }
-}
-
-// ==========================================
-// CADASTRO E LOGIN COM TOKEN NO HEADER (REQ. 16)
-// ==========================================
 function configurarCadastro() {
     const cadastroForm = document.getElementById('cadastro-form');
     if (!cadastroForm) return;
@@ -270,13 +194,9 @@ function configurarLogin() {
 }
 
 function fazerLogout() {
-    localStorage.removeItem('jwt-token');
     window.location.href = '/login';
 }
 
-// ==========================================
-// RECUPERAÇÃO DE SENHA
-// ==========================================
 function configurarRecuperacaoSenha() {
     const formPedir = document.getElementById('form-pedir-codigo');
     const formRedefinir = document.getElementById('form-redefinir-senha');
@@ -336,17 +256,15 @@ function configurarRecuperacaoSenha() {
 }
 
 // ==========================================
-// CATÁLOGO E HISTÓRICO DE REPRODUÇÃO (REQ. 4)
+// CATÁLOGO SEGMENTADO (SUGERIDOS, MINHA LISTA, FILMES, SÉRIES E GÊNEROS)
 // ==========================================
-async function carregarFilmes() {
-    const trendingList = document.getElementById('trending-list');
-    if (!trendingList) return;
-
+async function carregarCatalogoHome() {
     setLoading(true);
     try {
-        const response = await fetch(`${API_URL}/filmes`, {
+        const response = await fetch(`${API_URL}/filmes/catalogo`, {
             method: 'GET',
-            headers: getAuthHeaders()
+            headers: getAuthHeaders(),
+            credentials: 'same-origin'
         });
 
         if (response.status === 401 || response.status === 403) {
@@ -354,50 +272,153 @@ async function carregarFilmes() {
             return;
         }
 
-        const filmes = await response.json();
-        renderizarDestaque(filmes[0]);
-        renderizarFilmes(filmes);
+        const catalogo = await response.json();
+
+        // Destaque principal: prioriza o primeiro sugerido ou a primeira obra disponível
+        const destaque = (catalogo.sugeridos && catalogo.sugeridos[0])
+            || (catalogo.filmes && catalogo.filmes[0])
+            || (catalogo.series && catalogo.series[0]);
+        renderizarDestaque(destaque);
+
+        // 1. Sugeridos (exibido apenas se houver preferências geradas por Like)
+        const secSugeridos = document.getElementById('section-sugeridos');
+        const listSugeridos = document.getElementById('sugeridos-list');
+        const subSugeridos = document.getElementById('sugeridos-subtitulo');
+        if (secSugeridos && listSugeridos) {
+            if (catalogo.sugeridos && catalogo.sugeridos.length > 0) {
+                secSugeridos.style.display = 'block';
+                if (subSugeridos && catalogo.generosPreferidos?.length) {
+                    subSugeridos.innerText = `(Baseado em: ${catalogo.generosPreferidos.slice(0, 3).join(', ')})`;
+                }
+                renderizarListaCards(listSugeridos, catalogo.sugeridos, true);
+            } else {
+                secSugeridos.style.display = 'none';
+            }
+        }
+
+        // 2. Minha Lista (obras salvas pelo botão '+')
+        const secMinhaLista = document.getElementById('section-minha-lista');
+        const listMinhaLista = document.getElementById('minha-lista-carousel');
+        if (secMinhaLista && listMinhaLista) {
+            if (catalogo.minhaLista && catalogo.minhaLista.length > 0) {
+                secMinhaLista.style.display = 'block';
+                renderizarListaCards(listMinhaLista, catalogo.minhaLista, false);
+            } else {
+                secMinhaLista.style.display = 'none';
+            }
+        }
+
+        // 3. Filmes
+        const listFilmes = document.getElementById('filmes-list');
+        if (listFilmes) {
+            renderizarListaCards(listFilmes, catalogo.filmes || [], true, 'Nenhum filme disponível para o seu plano.');
+        }
+
+        // 4. Séries
+        const listSeries = document.getElementById('series-list');
+        if (listSeries) {
+            renderizarListaCards(listSeries, catalogo.series || [], true, 'Nenhuma série disponível para o seu plano.');
+        }
+
+        // 5. Secções dinâmicas por gênero disponível
+        const genreContainer = document.getElementById('genre-sections-container');
+        if (genreContainer && catalogo.porGenero) {
+            genreContainer.innerHTML = '';
+            Object.entries(catalogo.porGenero).forEach(([genero, itens]) => {
+                if (!itens || itens.length === 0) return;
+
+                const row = document.createElement('div');
+                row.className = 'media-row';
+
+                const h3 = document.createElement('h3');
+                h3.innerText = genero;
+                row.appendChild(h3);
+
+                const carousel = document.createElement('div');
+                carousel.className = 'media-carousel';
+                renderizarListaCards(carousel, itens, false);
+                row.appendChild(carousel);
+
+                genreContainer.appendChild(row);
+            });
+        }
     } catch (error) {
-        trendingList.innerHTML = '<p>Erro ao carregar a lista de filmes.</p>';
+        console.error('Erro ao carregar catálogo:', error);
     } finally {
         setLoading(false);
     }
 }
 
-function renderizarDestaque(filmeDestaque) {
+function renderizarDestaque(obraDestaque) {
     const tituloEl = document.getElementById('featured-title');
     const descEl = document.getElementById('featured-desc');
     const heroSection = document.getElementById('hero-section');
     const btnPlay = document.querySelector('.hero-buttons .btn-play');
 
-    if (!filmeDestaque) {
+    if (!obraDestaque) {
         if (tituloEl) tituloEl.innerText = 'Nenhum título disponível';
-        if (descEl) descEl.innerText = 'Não existem filmes cadastrados para o seu plano atual.';
+        if (descEl) descEl.innerText = 'Não existem filmes ou séries cadastrados para o seu plano atual.';
         return;
     }
 
-    if (tituloEl) tituloEl.innerText = filmeDestaque.titulo;
-    if (descEl) descEl.innerText = filmeDestaque.descricao || '';
-    if (heroSection && filmeDestaque.caminhoImagemHorizontal) {
-        heroSection.style.backgroundImage = `linear-gradient(to right, rgba(20,20,20,0.85), rgba(20,20,20,0.2)), url('${filmeDestaque.caminhoImagemHorizontal}')`;
+    if (tituloEl) tituloEl.innerText = obraDestaque.titulo;
+    if (descEl) descEl.innerText = obraDestaque.descricao || '';
+    const banner = obraDestaque.caminhoImagemHorizontal || obraDestaque.caminhoImagemVertical;
+    if (heroSection && banner) {
+        heroSection.style.backgroundImage = `linear-gradient(to right, rgba(20,20,20,0.85), rgba(20,20,20,0.2)), url('${banner}')`;
     }
     if (btnPlay) {
-        btnPlay.onclick = () => window.location.href = `/assistir?id=${filmeDestaque.id}`;
+        btnPlay.onclick = () => window.location.href = `/assistir?id=${obraDestaque.id}`;
     }
 }
 
-function renderizarFilmes(filmes) {
-    const trendingList = document.getElementById('trending-list');
-    trendingList.innerHTML = '';
+function renderizarListaCards(container, itens, usarPosterVertical = false, mensagemVazia = '') {
+    container.innerHTML = '';
+    if (!itens || itens.length === 0) {
+        if (mensagemVazia) {
+            container.innerHTML = `<p style="color:#888; font-size:0.95rem;">${mensagemVazia}</p>`;
+        }
+        return;
+    }
 
-    filmes.forEach(filme => {
-        const item = document.createElement('div');
-        item.className = 'media-item';
-        item.style.backgroundImage = `url(${filme.caminhoImagemHorizontal})`;
-        item.innerHTML = `<h4>${filme.titulo}</h4>`;
-        item.addEventListener('click', () => window.location.href = `/assistir?id=${filme.id}`);
-        trendingList.appendChild(item);
+    itens.forEach(obra => {
+        const card = document.createElement('div');
+        card.className = usarPosterVertical ? 'media-item-vertical' : 'media-item';
+
+        const imagem = usarPosterVertical
+            ? (obra.caminhoImagemVertical || obra.caminhoImagemHorizontal)
+            : (obra.caminhoImagemHorizontal || obra.caminhoImagemVertical);
+
+        if (imagem) {
+            card.style.backgroundImage = `url('${imagem}')`;
+        }
+
+        const labelTipo = obra.tipo === 'SERIE' ? 'Série' : 'Filme';
+        if (usarPosterVertical) {
+            card.innerHTML = `<span class="card-badge">${labelTipo}</span><h4>${obra.titulo}</h4>`;
+        } else {
+            card.innerHTML = `<h4>${obra.titulo}</h4>`;
+        }
+
+        card.addEventListener('click', () => window.location.href = `/assistir?id=${obra.id}`);
+        container.appendChild(card);
     });
+}
+
+// ==========================================
+// TELA DE ASSISTIR: PLAYER, MINHA LISTA (+) E LIKE (👍)
+// ==========================================
+function atualizarVisualBotaoLista(btn, naMinhaLista) {
+    if (!btn) return;
+    btn.classList.toggle('active', naMinhaLista);
+    btn.innerText = naMinhaLista ? '✓' : '+';
+    btn.title = naMinhaLista ? 'Remover da Minha Lista' : 'Adicionar à Minha Lista';
+}
+
+function atualizarVisualBotaoLike(btn, curtido) {
+    if (!btn) return;
+    btn.classList.toggle('active', curtido);
+    btn.title = curtido ? 'Você curtiu esta obra (clique para remover)' : 'Gostei (melhora suas recomendações)';
 }
 
 async function carregarDetalhesEProgressoFilme() {
@@ -407,30 +428,103 @@ async function carregarDetalhesEProgressoFilme() {
 
     setLoading(true);
     try {
-        const response = await fetch(`${API_URL}/filmes/${id}`, { headers: getAuthHeaders() });
+        const response = await fetch(`${API_URL}/filmes/${id}`, {
+            headers: getAuthHeaders(),
+            credentials: 'same-origin'
+        });
+
         if (response.status === 401) {
             fazerLogout();
             return;
         }
         if (response.status === 403 || !response.ok) {
-            alert('Não tem permissão para assistir a este título ou o filme não foi encontrado.');
+            alert('Não tem permissão para assistir a este título ou a obra não foi encontrada.');
             window.location.href = '/index';
             return;
         }
 
-        const filme = await response.json();
+        const obra = await response.json();
         const titleEl = document.getElementById('video-title');
         const descEl = document.getElementById('video-description');
         const genreEl = document.getElementById('video-genre');
+        const tipoEl = document.getElementById('video-tipo');
+        const formatoTextoEl = document.getElementById('video-formato-texto');
 
-        if (titleEl) titleEl.innerText = filme.titulo;
-        if (descEl) descEl.innerText = filme.descricao || 'Sem descrição disponível.';
-        if (genreEl) genreEl.innerText = filme.genero || 'Não informado';
+        const labelTipo = obra.tipo === 'SERIE' ? 'Série' : 'Filme';
+        if (titleEl) titleEl.innerText = obra.titulo;
+        if (descEl) descEl.innerText = obra.descricao || 'Sem descrição disponível.';
+        if (genreEl) genreEl.innerText = obra.genero || 'Não informado';
+        if (tipoEl) tipoEl.innerText = labelTipo;
+        if (formatoTextoEl) formatoTextoEl.innerText = labelTipo;
 
-        // Retoma o tempo assistido salvo no banco (Caso de Uso 2)
+        // Estado inicial de Minha Lista (+) e Like (👍)
+        const btnLista = document.getElementById('btn-minha-lista');
+        const btnLike = document.getElementById('btn-like');
+
+        const interacaoRes = await fetch(`${API_URL}/filmes/${id}/interacao`, {
+            headers: getAuthHeaders(),
+            credentials: 'same-origin'
+        });
+        if (interacaoRes.ok) {
+            const status = await interacaoRes.json();
+            atualizarVisualBotaoLista(btnLista, status.naMinhaLista);
+            atualizarVisualBotaoLike(btnLike, status.curtido);
+        }
+
+        if (btnLista) {
+            btnLista.addEventListener('click', async () => {
+                const res = await fetch(`${API_URL}/filmes/${id}/lista`, {
+                    method: 'POST',
+                    headers: getAuthHeaders(),
+                    credentials: 'same-origin'
+                });
+                if (res.ok) {
+                    const status = await res.json();
+                    atualizarVisualBotaoLista(btnLista, status.naMinhaLista);
+                    mostrarMensagem(
+                        status.naMinhaLista
+                            ? 'Adicionado à sua Minha Lista!'
+                            : 'Removido da sua Minha Lista.'
+                    );
+                }
+            });
+        }
+
+        if (btnLike) {
+            btnLike.addEventListener('click', async () => {
+                const res = await fetch(`${API_URL}/filmes/${id}/like`, {
+                    method: 'POST',
+                    headers: getAuthHeaders(),
+                    credentials: 'same-origin'
+                });
+                if (res.ok) {
+                    const status = await res.json();
+                    atualizarVisualBotaoLike(btnLike, status.curtido);
+                    mostrarMensagem(
+                        status.curtido
+                            ? 'Curtiu! Suas sugestões no catálogo foram atualizadas.'
+                            : 'Curtida removida.'
+                    );
+                }
+            });
+        }
+
+        // Player e histórico de reprodução
         const videoEl = document.querySelector('.video-player');
+        const btnReplay = document.getElementById('btn-replay');
+
         if (videoEl) {
-            const histRes = await fetch(`${API_URL}/historico/${id}`, { headers: getAuthHeaders() });
+            if (btnReplay) {
+                btnReplay.addEventListener('click', () => {
+                    videoEl.currentTime = 0;
+                    videoEl.play();
+                });
+            }
+
+            const histRes = await fetch(`${API_URL}/historico/${id}`, {
+                headers: getAuthHeaders(),
+                credentials: 'same-origin'
+            });
             if (histRes.ok) {
                 const hist = await histRes.json();
                 if (hist.tempoAssistido > 0) {
@@ -447,6 +541,7 @@ async function carregarDetalhesEProgressoFilme() {
                     await fetch(`${API_URL}/historico`, {
                         method: 'POST',
                         headers: getAuthHeaders(),
+                        credentials: 'same-origin',
                         body: JSON.stringify({ filmeId: parseInt(id), tempoAssistido: segundoAtual })
                     });
                 }
@@ -459,7 +554,10 @@ async function carregarDetalhesEProgressoFilme() {
 
 async function carregarAvatarUsuario() {
     try {
-        const res = await fetch(`${API_URL}/usuarios/perfil`, { headers: getAuthHeaders() });
+        const res = await fetch(`${API_URL}/usuarios/perfil`, {
+            headers: getAuthHeaders(),
+            credentials: 'same-origin'
+        });
         if (res.ok) {
             const perfil = await res.json();
             if (perfil.caminhoFoto) {
@@ -483,7 +581,6 @@ function configurarPerfil() {
     const inputFoto = document.getElementById('perfil-foto-input');
     const previewFoto = document.getElementById('perfil-preview');
 
-    // Pré-visualização local imediata antes de enviar
     if (inputFoto && previewFoto) {
         inputFoto.addEventListener('change', () => {
             const file = inputFoto.files[0];
@@ -498,7 +595,10 @@ function configurarPerfil() {
             e.preventDefault();
             setLoading(true);
             try {
-                const res = await fetch(`${API_URL}/usuarios/perfil`, { headers: getAuthHeaders() });
+                const res = await fetch(`${API_URL}/usuarios/perfil`, {
+                    headers: getAuthHeaders(),
+                    credentials: 'same-origin'
+                });
                 if (res.ok) {
                     const perfil = await res.json();
                     document.getElementById('perfil-username').value = perfil.username || '';
@@ -524,7 +624,6 @@ function configurarPerfil() {
             e.preventDefault();
             setLoading(true);
             try {
-                // 1. Atualiza dados textuais (username e plano)
                 const payload = {
                     username: document.getElementById('perfil-username').value,
                     caminhoFoto: null,
@@ -534,6 +633,7 @@ function configurarPerfil() {
                 const resPerfil = await fetch(`${API_URL}/usuarios/perfil`, {
                     method: 'PUT',
                     headers: getAuthHeaders(),
+                    credentials: 'same-origin',
                     body: JSON.stringify(payload)
                 });
 
@@ -545,7 +645,6 @@ function configurarPerfil() {
 
                 let perfilAtualizado = await resPerfil.json();
 
-                // 2. Se o usuário selecionou uma imagem, envia via multipart/form-data
                 if (inputFoto && inputFoto.files.length > 0) {
                     const formData = new FormData();
                     formData.append('foto', inputFoto.files[0]);
@@ -564,7 +663,6 @@ function configurarPerfil() {
                     perfilAtualizado = await resFoto.json();
                 }
 
-                // 3. Aplica a nova foto imediatamente na barra superior
                 if (perfilAtualizado.caminhoFoto) {
                     const novaUrl = `${perfilAtualizado.caminhoFoto}?t=${Date.now()}`;
                     const avatarNavbar = document.getElementById('avatar-btn');
@@ -573,7 +671,7 @@ function configurarPerfil() {
 
                 mostrarMensagem('Perfil atualizado com sucesso!');
                 modal.classList.remove('active');
-                carregarFilmes();
+                carregarCatalogoHome();
             } finally {
                 setLoading(false);
             }

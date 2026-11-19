@@ -1,8 +1,10 @@
 package br.com.ifg.model.dto;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
+import java.util.List;
 
 public record FilmeRequestDTO(
         @NotBlank(message = "O título é obrigatório")
@@ -12,9 +14,11 @@ public record FilmeRequestDTO(
         @NotBlank(message = "A descrição é obrigatória")
         String descricao,
 
-        @NotBlank(message = "O gênero é obrigatório")
-        @Size(max = 50, message = "O gênero deve ter no máximo 50 caracteres")
-        String genero,
+        @NotBlank(message = "O tipo da obra (Filme ou Série) é obrigatório")
+        String tipo,
+
+        @NotEmpty(message = "Selecione pelo menos um gênero")
+        List<String> generos,
 
         String caminhoImagemHorizontal,
         String caminhoImagemVertical,

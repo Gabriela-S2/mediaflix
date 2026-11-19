@@ -19,4 +19,16 @@ public class FilmeDAO implements PanacheRepository<Filme> {
     public List<Filme> listarTodosOrdenados() {
         return find("SELECT f FROM Filme f ORDER BY f.id ASC").list();
     }
+
+    public void removerVinculosDoFilme(Long filmeId) {
+        getEntityManager().createNativeQuery("DELETE FROM usuario_lista WHERE filme_id = :id")
+                .setParameter("id", filmeId)
+                .executeUpdate();
+        getEntityManager().createNativeQuery("DELETE FROM usuario_curtidas WHERE filme_id = :id")
+                .setParameter("id", filmeId)
+                .executeUpdate();
+        getEntityManager().createNativeQuery("DELETE FROM usuario_filmes WHERE filme_id = :id")
+                .setParameter("id", filmeId)
+                .executeUpdate();
+    }
 }

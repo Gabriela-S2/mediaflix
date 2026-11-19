@@ -12,14 +12,13 @@
     <div style="display: flex; align-items: center;">
         <a href="/index" style="text-decoration: none;"><h1 class="logo">MediaFlix</h1></a>
         <nav class="nav-links">
-            <a href="#">Início</a>
-            <a href="#">Séries</a>
-            <a href="#">Filmes</a>
-            <a href="#">Minha Lista</a>
+            <a href="#hero-section">Início</a>
+            <a href="#section-filmes">Filmes</a>
+            <a href="#section-series">Séries</a>
+            <a href="#section-minha-lista">Minha Lista</a>
         </nav>
     </div>
 
-    <!-- Menu do Usuário (Avatar e Dropdown) -->
     <div class="user-menu" id="user-menu">
         <img src="/midia/novo_usuario.png" alt="Avatar" class="avatar" id="avatar-btn">
         <div class="dropdown-menu">
@@ -41,13 +40,34 @@
 </section>
 
 <main>
-    <div class="media-row">
-        <h3>Adicionados Recentemente</h3>
-        <div class="media-carousel" id="trending-list">
-            <!-- Os filmes serão injetados aqui via JavaScript -->
-        </div>
+    <!-- 1. Sugeridos (visível apenas quando o usuário possui preferências via Like) -->
+    <div class="media-row" id="section-sugeridos" style="display: none;">
+        <h3>Sugeridos para Você <small id="sugeridos-subtitulo" class="row-subtitle"></small></h3>
+        <div class="media-carousel" id="sugeridos-list"></div>
     </div>
+
+    <!-- 2. Minha Lista (obras salvas pelo botão +) -->
+    <div class="media-row" id="section-minha-lista" style="display: none;">
+        <h3>Minha Lista</h3>
+        <div class="media-carousel" id="minha-lista-carousel"></div>
+    </div>
+
+    <!-- 3. Filmes -->
+    <div class="media-row" id="section-filmes">
+        <h3>Filmes</h3>
+        <div class="media-carousel" id="filmes-list"></div>
+    </div>
+
+    <!-- 4. Séries -->
+    <div class="media-row" id="section-series">
+        <h3>Séries</h3>
+        <div class="media-carousel" id="series-list"></div>
+    </div>
+
+    <!-- 5. Secções dinâmicas baseadas nos gêneros disponíveis -->
+    <div id="genre-sections-container"></div>
 </main>
+
 <div class="modal-backdrop" id="modal-perfil">
     <div class="modal-box">
         <h3>Meu Perfil e Assinatura</h3>

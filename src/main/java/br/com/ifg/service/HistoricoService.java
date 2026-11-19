@@ -1,5 +1,6 @@
 package br.com.ifg.service;
 
+import br.com.ifg.model.bo.HistoricoBO;
 import br.com.ifg.model.dao.FilmeDAO;
 import br.com.ifg.model.dao.HistoricoDAO;
 import br.com.ifg.model.dao.UsuarioDAO;
@@ -14,6 +15,7 @@ import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import org.eclipse.microprofile.jwt.JsonWebToken;
 import org.jboss.logging.Logger;
+
 import java.util.List;
 
 @ApplicationScoped
@@ -31,21 +33,17 @@ public class HistoricoService {
     FilmeDAO filmeDAO;
 
     @Inject
+    HistoricoBO historicoBO;
+
+    @Inject
     JsonWebToken jwt;
 
     @Transactional
     public HistoricoResponseDTO registrarProgresso(HistoricoRequestDTO dto) {
         Usuario usuario = obterUsuarioLogado();
         Filme filme = filmeDAO.findById(dto.filmeId());
-        if (filme == null) {
-            throw new IllegalArgumentException("Filme não encontrado.");
-        }
 
-        if (!Boolean.TRUE.equals(usuario.getIsAdmin()) && filme.getPlano() != null) {
-            if (usuario.getPlano() == null || filme.getPlano().getNivel() > usuario.getPlano().getNivel()) {
-                throw new SecurityException("Plano insuficiente para assistir a este filme.");
-            }
-        }
+        historicoBO.validarRegistroProgresso(usuario, filme, dto.tempoAssistido());
 
         HistoricoId id = new HistoricoId(usuario.getId(), filme.getId());
         Historico historico = historicoDAO.findById(id);

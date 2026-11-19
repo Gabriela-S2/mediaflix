@@ -1,6 +1,8 @@
 package br.com.ifg.model.entity;
 
 import jakarta.persistence.*;
+import java.util.Arrays;
+import java.util.List;
 
 @Entity
 @Table(name = "filme")
@@ -16,7 +18,10 @@ public class Filme {
     @Column(columnDefinition = "TEXT")
     private String descricao;
 
-    @Column(length = 50)
+    @Column(nullable = false, length = 20, columnDefinition = "varchar(20) default 'FILME'")
+    private String tipo = "FILME";
+
+    @Column(length = 255)
     private String genero;
 
     @Column(name = "caminho_imagem_horizontal")
@@ -28,6 +33,17 @@ public class Filme {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "plano_id", nullable = false)
     private Plano plano;
+
+    @Transient
+    public List<String> getGenerosLista() {
+        if (genero == null || genero.isBlank()) {
+            return List.of();
+        }
+        return Arrays.stream(genero.split(","))
+                .map(String::trim)
+                .filter(s -> !s.isEmpty())
+                .toList();
+    }
 
     public Long getId() {
         return id;
@@ -51,6 +67,14 @@ public class Filme {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     public String getGenero() {
