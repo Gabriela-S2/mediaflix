@@ -20,6 +20,8 @@ import java.nio.charset.StandardCharsets;
 public class RegistroLogFilter implements ContainerRequestFilter {
 
     @Inject
+    br.com.ifg.model.dao.LogDAO logDAO;
+    @Inject
     LogArquivoService logArquivoService; // <--- Injetamos o novo serviço de ficheiros
 
     @Context
@@ -55,12 +57,15 @@ public class RegistroLogFilter implements ContainerRequestFilter {
 
         // Guarda o registo no ficheiro TXT
         logArquivoService.salvarLogEmArquivo(log);
+        logDAO.salvarLog(log);
     }
 
     private String mascararHeaders(MultivaluedMap<String, String> headers) {
         StringBuilder sb = new StringBuilder();
         headers.forEach((key, values) -> {
-            if (key.equalsIgnoreCase("Authorization") || key.toLowerCase().contains("token")) {
+            if (key.equalsIgnoreCase("Authorization")
+                    || key.equalsIgnoreCase("Cookie")
+                    || key.toLowerCase().contains("token")) {
                 sb.append("  ").append(key).append(": [MASKED]\n");
             } else {
                 sb.append("  ").append(key).append(": ").append(values).append("\n");
@@ -72,6 +77,11 @@ public class RegistroLogFilter implements ContainerRequestFilter {
     private String extrairEMascararPayload(ContainerRequestContext context) throws IOException {
         if (!context.hasEntity() || context.getMethod().equals("GET")) {
             return "  Sem Payload";
+        }
+
+        if (context.getMediaType() != null
+                && context.getMediaType().toString().toLowerCase().startsWith("multipart/form-data")) {
+            return "  [Arquivo Binário - Multipart Upload]";
         }
 
         byte[] entityBytes = context.getEntityStream().readAllBytes();

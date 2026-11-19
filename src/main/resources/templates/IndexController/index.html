@@ -21,10 +21,9 @@
 
     <!-- Menu do Usuário (Avatar e Dropdown) -->
     <div class="user-menu" id="user-menu">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Avatar" class="avatar" id="avatar-btn">
+        <img src="/midia/novo_usuario.png" alt="Avatar" class="avatar" id="avatar-btn">
         <div class="dropdown-menu">
-            <a href="#">Editar Perfil</a>
-            <a href="#">Alterar Assinatura</a>
+            <a href="#" id="btn-abrir-perfil">Editar Perfil e Plano</a>
             <a href="#" id="btn-logout">Sair do MediaFlix</a>
         </div>
     </div>
@@ -49,5 +48,39 @@
         </div>
     </div>
 </main>
+<div class="modal-backdrop" id="modal-perfil">
+    <div class="modal-box">
+        <h3>Meu Perfil e Assinatura</h3>
+        <form id="form-perfil">
+            <div style="text-align: center; margin-bottom: 16px;">
+                <img id="perfil-preview"
+                     src="/midia/novo_usuario.png"
+                     alt="Prévia da foto"
+                     style="width: 90px; height: 90px; border-radius: 50%; object-fit: cover; border: 2px solid #e50914;">
+            </div>
+
+            <div class="input-group">
+                <label style="display:block; margin-bottom:6px; color:#b3b3b3; font-size:0.9rem;">Alterar foto de perfil (PNG/JPG):</label>
+                <input type="file" id="perfil-foto-input" accept="image/png, image/jpeg, image/webp" style="padding: 10px;">
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="perfil-username" required placeholder="Nome de usuário">
+            </div>
+
+            <label style="display:block; margin-bottom:8px; color:#b3b3b3;">Plano de Assinatura:</label>
+            <select id="perfil-plano" required>
+                <option value="1">Básico</option>
+                <option value="2">Padrão</option>
+                <option value="3">Premium</option>
+            </select>
+
+            <div style="display:flex; gap:10px;">
+                <button type="submit" class="btn-submit" style="margin-top:0;">Salvar Alterações</button>
+                <button type="button" id="btn-fechar-perfil" class="btn-info" style="margin-right:0;">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>

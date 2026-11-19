@@ -9,12 +9,12 @@ public class Historico {
     @EmbeddedId
     private HistoricoId id = new HistoricoId();
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @MapsId("usuarioId")
     @JoinColumn(name = "usuario_id")
     private Usuario usuario;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @MapsId("filmeId")
     @JoinColumn(name = "filme_id")
     private Filme filme;

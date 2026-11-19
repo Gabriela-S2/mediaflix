@@ -2,8 +2,6 @@ package br.com.ifg.model.entity;
 
 import jakarta.persistence.*;
 
-
-
 @Entity
 @Table(name = "filme")
 public class Filme {
@@ -27,7 +25,7 @@ public class Filme {
     @Column(name = "caminho_imagem_vertical")
     private String caminhoImagemVertical;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "plano_id", nullable = false)
     private Plano plano;
 

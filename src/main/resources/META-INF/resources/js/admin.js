@@ -1,20 +1,72 @@
-const API_URL = 'http://localhost:8080/filmes';
+const API_URL = '/filmes';
 let listaFilmesGlobal = [];
 
-document.addEventListener('DOMContentLoaded', () => {
-    carregarFilmesAdmin();
+function getAuthHeaders() {
+    return {
+        'Content-Type': 'application/json'
+    };
+}
 
-    document.getElementById('filmeForm').addEventListener('submit', async (e) => {
-        e.preventDefault();
-        salvarFilme();
-    });
+async function verificarSessaoAdmin() {
+    try {
+        const response = await fetch('/usuarios/perfil', {
+            credentials: 'same-origin'
+        });
+
+        if (!response.ok) {
+            window.location.href = '/login';
+            return false;
+        }
+
+        const perfil = await response.json();
+        if (!perfil.isAdmin) {
+            window.location.href = '/index';
+            return false;
+        }
+
+        return true;
+    } catch (error) {
+        console.error('Erro ao verificar sessão:', error);
+        window.location.href = '/login';
+        return false;
+    }
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+    const autenticado = await verificarSessaoAdmin();
+    if (!autenticado) return;
+
+    await carregarFilmesAdmin();
+
+    const filmeForm = document.getElementById('filmeForm');
+    if (filmeForm) {
+        filmeForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            await salvarFilme();
+        });
+    }
+
+    const btnLogout = document.getElementById('btn-logout');
+    if (btnLogout) {
+        btnLogout.addEventListener('click', async (e) => {
+            e.preventDefault();
+            await fetch('/usuarios/logout', {
+                method: 'POST',
+                credentials: 'same-origin'
+            });
+            window.location.href = '/login';
+        });
+    }
 });
 
 async function carregarFilmesAdmin() {
     try {
-        const response = await fetch(`${API_URL}/todos`);
+        const response = await fetch(`${API_URL}/todos`, {
+            headers: getAuthHeaders(),
+            credentials: 'same-origin'
+        });
+
         if (response.status === 401 || response.status === 403) {
-            alert('Acesso negado. Apenas administradores podem aceder a esta página.');
             window.location.href = '/login';
             return;
         }
@@ -55,16 +107,13 @@ function filtrarFilmes() {
 async function salvarFilme() {
     const id = document.getElementById('filmeId').value;
 
-    // O backend espera um objeto Plano aninhado: { plano: { id: X } }
     const payload = {
         titulo: document.getElementById('titulo').value,
         descricao: document.getElementById('descricao').value,
         genero: document.getElementById('genero').value,
         caminhoImagemHorizontal: document.getElementById('imgHoriz').value,
         caminhoImagemVertical: document.getElementById('imgVert').value,
-        plano: {
-            id: parseInt(document.getElementById('planoId').value)
-        }
+        planoId: parseInt(document.getElementById('planoId').value)
     };
 
     const url = id ? `${API_URL}/${id}` : API_URL;
@@ -73,16 +122,23 @@ async function salvarFilme() {
     try {
         const response = await fetch(url, {
             method: metodo,
-            headers: { 'Content-Type': 'application/json' },
+            headers: getAuthHeaders(),
+            credentials: 'same-origin',
             body: JSON.stringify(payload)
         });
+
+        if (response.status === 401 || response.status === 403) {
+            window.location.href = '/login';
+            return;
+        }
 
         if (response.ok) {
             alert(id ? 'Filme atualizado com sucesso!' : 'Filme criado com sucesso!');
             limparFormulario();
             carregarFilmesAdmin();
         } else {
-            alert('Erro ao guardar o filme.');
+            const err = await response.json().catch(() => ({}));
+            alert(err.detalhes ? err.detalhes.join('\n') : (err.erro || 'Erro ao guardar o filme.'));
         }
     } catch (error) {
         console.error('Erro:', error);
@@ -109,7 +165,17 @@ async function deletarFilme(id) {
     if (!confirm('Tem a certeza que deseja excluir este filme permanentemente?')) return;
 
     try {
-        const response = await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
+        const response = await fetch(`${API_URL}/${id}`, {
+            method: 'DELETE',
+            headers: getAuthHeaders(),
+            credentials: 'same-origin'
+        });
+
+        if (response.status === 401 || response.status === 403) {
+            window.location.href = '/login';
+            return;
+        }
+
         if (response.ok) {
             carregarFilmesAdmin();
         } else {

@@ -1,0 +1,713 @@
+[20:50:01] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/q/dev-ui/welcome]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[20:50:09] GET http://localhost:8080/cadastro
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): cadastro
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[20:51:04] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/cadastro]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[20:51:32] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [49]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  {"email":"premium@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[20:52:16] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[20:52:23] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[21:18:04] GET http://localhost:8080/admin/filmes
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): paginaAdmin
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:18:04] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/admin/filmes]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:18:11] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[21:18:21] GET http://localhost:8080/admin/filmes
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): paginaAdmin
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:20:17] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:21:04] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:39:00] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:39:32] GET http://localhost:8080/usuarios/foto/R2FicmllbGE_2026-11-17.png?t=1794962372746
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:40:08] GET http://localhost:8080/usuarios/foto/R2FicmllbGE_2026-11-17.png?t=1794962408971
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:40:29] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:44:17] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:44:32] GET http://localhost:8080/usuarios/foto/6_2026-11-17.png?t=1794962671988
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:44:37] GET http://localhost:8080/usuarios/foto/6_2026-11-17.png?t=1794962677071
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:44:42] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:44:44] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:44:54] GET http://localhost:8080/usuarios/foto/6_2026-11-17.png?t=1794962694614
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:44:56] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:44:56] GET http://localhost:8080/usuarios/foto/6_2026-11-17.png?t=1794962696813
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:44:57] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:44:57] GET http://localhost:8080/usuarios/foto/6_2026-11-17.png?t=1794962697651
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:44:59] GET http://localhost:8080/usuarios/foto/6_2026-11-17.png?t=1794962699646
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:45:06] GET http://localhost:8080/index
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[21:45:14] GET http://localhost:8080/usuarios/foto/6_2026-11-17.png?t=1794962714784
+- Utilizador: Anonimo
+- IP do Cliente: 127.0.0.1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Cookie: [MASKED]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------

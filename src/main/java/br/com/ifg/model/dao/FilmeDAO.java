@@ -2,17 +2,21 @@ package br.com.ifg.model.dao;
 
 import br.com.ifg.model.entity.Filme;
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
+import io.quarkus.panache.common.Parameters;
 import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.enterprise.context.SessionScoped;
-
 import java.util.List;
 
-@SessionScoped
+@ApplicationScoped
 public class FilmeDAO implements PanacheRepository<Filme> {
 
-    // Busca todos os filmes disponíveis para um determinado nível de plano
     public List<Filme> buscarFilmesPorNivelPlano(Integer nivelUsuario) {
-        // Ex: Se o usuário é nível 2 (Padrão), ele vê filmes de nível 1 e 2.
-        return list("plano.nivel <= ?1", nivelUsuario);
+        return find(
+                "SELECT f FROM Filme f WHERE f.plano IS NULL OR f.plano.nivel <= :nivel ORDER BY f.id ASC",
+                Parameters.with("nivel", nivelUsuario)
+        ).list();
+    }
+
+    public List<Filme> listarTodosOrdenados() {
+        return find("SELECT f FROM Filme f ORDER BY f.id ASC").list();
     }
 }

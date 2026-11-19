@@ -10,6 +10,7 @@ public class HistoricoId implements Serializable {
 
     private Long usuarioId;
     private Long filmeId;
+    private static final long serialVersionUID = 1L;
 
     public HistoricoId() {}
 

@@ -17,7 +17,6 @@ public class AdminFilmesController {
     }
 
     @GET
-    @RolesAllowed("ADMIN")
     @Produces(MediaType.TEXT_HTML)
     public TemplateInstance paginaAdmin() {
         return Templates.adminFilmes();

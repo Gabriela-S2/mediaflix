@@ -1,19 +1,21 @@
+// RecuperacaoSenhaDAO.java
 package br.com.ifg.model.dao;
 
 import br.com.ifg.model.entity.RecuperacaoSenha;
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
+import io.quarkus.panache.common.Parameters;
 import jakarta.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
 public class RecuperacaoSenhaDAO implements PanacheRepository<RecuperacaoSenha> {
 
-    // Busca o código de recuperação mais recente gerado para o e-mail
     public RecuperacaoSenha buscarCodigoPorEmail(String email) {
-        return find("email = ?1 ORDER BY dataCriacao DESC", email).firstResult();
+        return find("SELECT r FROM RecuperacaoSenha r WHERE r.email = :email ORDER BY r.dataCriacao DESC",
+                Parameters.with("email", email)).firstResult();
     }
 
-    // Deleta os códigos de um e-mail após a senha ser redefinida com sucesso
     public void limparCodigosUsados(String email) {
-        delete("email", email);
+        delete("DELETE FROM RecuperacaoSenha r WHERE r.email = :email",
+                Parameters.with("email", email));
     }
 }

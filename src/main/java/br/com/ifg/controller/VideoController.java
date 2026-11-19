@@ -8,7 +8,6 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
 @Path("/assistir")
-@RolesAllowed("USER")
 public class VideoController {
     @CheckedTemplate
     public static class Templates {

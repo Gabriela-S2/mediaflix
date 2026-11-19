@@ -1,17 +1,24 @@
 package br.com.ifg.resources;
 
+import jakarta.ws.rs.core.NewCookie;
 import br.com.ifg.model.dao.UsuarioDAO;
+import br.com.ifg.model.dto.AtualizarPerfilRequestDTO;
 import br.com.ifg.model.dto.LoginRequestDTO;
+import br.com.ifg.model.dto.UsuarioRequestDTO;
+import br.com.ifg.model.dto.UsuarioResponseDTO;
 import br.com.ifg.model.entity.Usuario;
 import br.com.ifg.service.UsuarioService;
+import io.quarkus.security.Authenticated;
 import jakarta.annotation.security.PermitAll;
 import jakarta.inject.Inject;
 import jakarta.validation.Valid;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+import org.eclipse.microprofile.jwt.JsonWebToken;
+import org.jboss.resteasy.reactive.RestForm;
+import org.jboss.resteasy.reactive.multipart.FileUpload;
 import java.util.Map;
-import jakarta.ws.rs.core.NewCookie;
 
 @Path("/usuarios")
 @Produces(MediaType.APPLICATION_JSON)
@@ -24,16 +31,14 @@ public class UsuarioResource {
     @Inject
     UsuarioDAO usuarioDAO;
 
+    @Inject
+    JsonWebToken jwt;
+
     @POST
     @PermitAll
-    public Response cadastrar(Usuario usuario) {
-        try {
-            Usuario novoUsuario = usuarioService.cadastrar(usuario);
-            return Response.status(Response.Status.CREATED).entity(novoUsuario).build();
-        } catch (Exception e) {
-            String mensagemErro = e.getMessage() != null ? e.getMessage() : "Erro desconhecido no cadastro.";
-            return Response.status(Response.Status.BAD_REQUEST).entity(Map.of("erro", mensagemErro)).build();
-        }
+    public Response cadastrar(@Valid UsuarioRequestDTO dto) {
+        UsuarioResponseDTO novoUsuario = usuarioService.cadastrar(dto);
+        return Response.status(Response.Status.CREATED).entity(novoUsuario).build();
     }
 
     @POST
@@ -42,29 +47,82 @@ public class UsuarioResource {
     public Response login(@Valid LoginRequestDTO credenciais) {
         try {
             String token = usuarioService.autenticar(credenciais.email(), credenciais.senha());
-
-            // Busca o utilizador para verificar se é admin
             Usuario usuario = usuarioDAO.buscarPorEmail(credenciais.email());
-            boolean isAdmin = usuario.getAdmin() != null && usuario.getAdmin();
+            boolean isAdmin = Boolean.TRUE.equals(usuario.getIsAdmin());
 
             NewCookie jwtCookie = new NewCookie.Builder("jwt-token")
                     .value(token)
                     .path("/")
-                    .maxAge(24 * 60 * 60)
+                    .maxAge(86400) // 24 horas (em segundos)
                     .httpOnly(true)
+                    .sameSite(NewCookie.SameSite.LAX)
                     .build();
 
-            // Retorna o status de admin no JSON para o frontend fazer o redirecionamento
             return Response.ok(Map.of(
-                            "mensagem", "Login com sucesso",
-                            "isAdmin", isAdmin
-                    ))
-                    .cookie(jwtCookie)
-                    .build();
+                    "mensagem", "Login com sucesso",
+                    "isAdmin", isAdmin
+            )).cookie(jwtCookie).build();
 
         } catch (Exception e) {
-            String mensagemErro = e.getMessage() != null ? e.getMessage() : "Erro interno do servidor.";
+            String mensagemErro = e.getMessage() != null ? e.getMessage() : "Credenciais inválidas.";
             return Response.status(Response.Status.UNAUTHORIZED).entity(Map.of("erro", mensagemErro)).build();
+        }
+    }
+
+    @POST
+    @Path("/logout")
+    @PermitAll
+    public Response logout() {
+        NewCookie cookieExpirado = new NewCookie.Builder("jwt-token")
+                .value("")
+                .path("/")
+                .maxAge(0)
+                .httpOnly(true)
+                .sameSite(NewCookie.SameSite.LAX)
+                .build();
+
+        return Response.ok(Map.of("mensagem", "Logout realizado com sucesso"))
+                .cookie(cookieExpirado)
+                .build();
+    }
+
+    @GET
+    @Path("/perfil")
+    @Authenticated
+    public Response obterPerfil() {
+        UsuarioResponseDTO perfil = usuarioService.buscarPerfil(jwt.getName());
+        return Response.ok(perfil).build();
+    }
+
+    @PUT
+    @Path("/perfil")
+    @Authenticated
+    public Response atualizarPerfil(@Valid AtualizarPerfilRequestDTO dto) {
+        UsuarioResponseDTO perfilAtualizado = usuarioService.atualizarPerfil(jwt.getName(), dto);
+        return Response.ok(perfilAtualizado).build();
+    }
+
+    @POST
+    @Path("/perfil/foto")
+    @Authenticated
+    @Consumes(MediaType.MULTIPART_FORM_DATA)
+    public Response uploadFotoPerfil(@RestForm("foto") FileUpload foto) {
+        UsuarioResponseDTO perfilAtualizado = usuarioService.salvarFotoPerfil(jwt.getName(), foto);
+        return Response.ok(perfilAtualizado).build();
+    }
+
+    @GET
+    @Path("/foto/{nomeArquivo}")
+    @PermitAll
+    @Produces("image/png")
+    public Response buscarFotoPerfil(@PathParam("nomeArquivo") String nomeArquivo) {
+        try {
+            java.nio.file.Path caminhoFoto = usuarioService.obterCaminhoFoto(nomeArquivo);
+            return Response.ok(caminhoFoto.toFile())
+                    .header("Cache-Control", "no-cache, no-store, must-revalidate")
+                    .build();
+        } catch (IllegalArgumentException e) {
+            return Response.status(Response.Status.NOT_FOUND).build();
         }
     }
 }

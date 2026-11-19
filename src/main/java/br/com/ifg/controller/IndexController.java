@@ -10,7 +10,6 @@ import jakarta.ws.rs.core.MediaType;
 
 
 @Path("/index")
-@RolesAllowed("USER")
 public class IndexController {
     @CheckedTemplate
     public static class Templates {
