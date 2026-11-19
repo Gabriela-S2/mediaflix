@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 public record CatalogoHomeResponseDTO(
+        List<HistoricoResponseDTO> continueAssistindo,
         List<FilmeResponseDTO> sugeridos,
         List<String> generosPreferidos,
         List<FilmeResponseDTO> minhaLista,

@@ -2,6 +2,7 @@ package br.com.ifg.service;
 
 import br.com.ifg.model.bo.FilmeBO;
 import br.com.ifg.model.dao.FilmeDAO;
+import br.com.ifg.model.dao.HistoricoDAO;
 import br.com.ifg.model.dao.PlanoDAO;
 import br.com.ifg.model.dao.UsuarioDAO;
 import br.com.ifg.model.dto.CatalogoHomeResponseDTO;
@@ -9,6 +10,7 @@ import br.com.ifg.model.dto.FilmeRequestDTO;
 import br.com.ifg.model.dto.FilmeResponseDTO;
 import br.com.ifg.model.dto.InteracaoFilmeResponseDTO;
 import br.com.ifg.model.entity.Filme;
+import br.com.ifg.model.entity.Historico;
 import br.com.ifg.model.entity.Plano;
 import br.com.ifg.model.entity.Usuario;
 import jakarta.enterprise.context.ApplicationScoped;
@@ -25,6 +27,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Map;
 
 @ApplicationScoped
 public class FilmeService {
@@ -43,7 +46,13 @@ public class FilmeService {
     UsuarioDAO usuarioDAO;
 
     @Inject
+    HistoricoDAO historicoDAO;
+
+    @Inject
     FilmeBO filmeBO;
+
+    @Inject
+    TcpAnalyticsClient tcpAnalyticsClient;
 
     @Inject
     JsonWebToken jwt;
@@ -75,10 +84,15 @@ public class FilmeService {
     public CatalogoHomeResponseDTO montarCatalogoHome() {
         Usuario usuario = obterUsuarioLogado();
         List<Filme> permitidos = listarEntidadesPermitidas(usuario);
+        List<Historico> historicoUsuario = historicoDAO.listarPorUsuario(usuario.getId());
+        Map<Long, Double> scoresGlobais = tcpAnalyticsClient.consultarRankingGlobal();
+
         return filmeBO.organizarCatalogoHome(
                 permitidos,
+                historicoUsuario,
                 usuario.getMinhaLista(),
-                usuario.getFilmesCurtidos()
+                usuario.getFilmesCurtidos(),
+                scoresGlobais
         );
     }
 
@@ -116,15 +130,33 @@ public class FilmeService {
         Filme filme = buscarPorId(filmeId);
         filmeBO.validarAcessoAoFilme(usuario, filme);
 
+        boolean curtidoAgora;
+
         if (usuario.getFilmesCurtidos().contains(filme)) {
             usuario.getFilmesCurtidos().remove(filme);
+            curtidoAgora = false;
         } else {
             usuario.getFilmesCurtidos().add(filme);
+            curtidoAgora = true;
+        }
+        if (!Boolean.FALSE.equals(usuario.getTelemetriaAtiva())) {
+            tcpAnalyticsClient.registrarEventoAsync(
+                    curtidoAgora ? "LIKE" : "UNLIKE",
+                    filme.getId(),
+                    filme.getTitulo(),
+                    usuario.getEmail()
+            );
         }
 
+        tcpAnalyticsClient.registrarEventoAsync(
+                curtidoAgora ? "LIKE" : "UNLIKE",
+                filme.getId(),
+                filme.getTitulo(),
+                usuario.getEmail()
+        );
+
         boolean naLista = usuario.getMinhaLista().contains(filme);
-        boolean curtido = usuario.getFilmesCurtidos().contains(filme);
-        return new InteracaoFilmeResponseDTO(filmeId, naLista, curtido);
+        return new InteracaoFilmeResponseDTO(filmeId, naLista, curtidoAgora);
     }
 
     public FilmeResponseDTO buscarPorIdParaUsuarioLogado(Long id) {

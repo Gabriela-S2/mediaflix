@@ -16,6 +16,7 @@ import jakarta.transaction.Transactional;
 import org.eclipse.microprofile.jwt.JsonWebToken;
 import org.jboss.logging.Logger;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @ApplicationScoped
@@ -36,6 +37,9 @@ public class HistoricoService {
     HistoricoBO historicoBO;
 
     @Inject
+    TcpAnalyticsClient tcpAnalyticsClient;
+
+    @Inject
     JsonWebToken jwt;
 
     @Transactional
@@ -47,36 +51,53 @@ public class HistoricoService {
 
         HistoricoId id = new HistoricoId(usuario.getId(), filme.getId());
         Historico historico = historicoDAO.findById(id);
+        boolean primeiraVisualizacao = false;
 
         if (historico == null) {
             historico = new Historico();
             historico.setId(id);
             historico.setUsuario(usuario);
             historico.setFilme(filme);
+            primeiraVisualizacao = dto.tempoAssistido() > 0;
+        } else if ((historico.getTempoAssistido() == null || historico.getTempoAssistido() == 0) && dto.tempoAssistido() > 0) {
+            primeiraVisualizacao = true;
         }
 
         historico.setTempoAssistido(dto.tempoAssistido());
+        if (dto.duracaoTotal() != null && dto.duracaoTotal() > 0) {
+            historico.setDuracaoTotal(dto.duracaoTotal());
+        }
+        historico.setUltimaAtualizacao(LocalDateTime.now());
+
         historicoDAO.persist(historico);
 
-        LOG.debugf("Progresso atualizado: usuario=%s, filmeId=%d, segundos=%d",
-                usuario.getEmail(), filme.getId(), dto.tempoAssistido());
+        if (primeiraVisualizacao) {
+            tcpAnalyticsClient.registrarEventoAsync("VIEW", filme.getId(), filme.getTitulo(), usuario.getEmail());
+        }
 
-        return converterParaDTO(historico);
+        if (primeiraVisualizacao && !Boolean.FALSE.equals(usuario.getTelemetriaAtiva())) {
+            tcpAnalyticsClient.registrarEventoAsync("VIEW", filme.getId(), filme.getTitulo(), usuario.getEmail());
+        }
+
+        LOG.debugf("Progresso atualizado: usuario=%s, filmeId=%d, segundos=%d/%d",
+                usuario.getEmail(), filme.getId(), dto.tempoAssistido(), historico.getDuracaoTotal());
+
+        return historicoBO.converterParaDTO(historico);
     }
 
     public HistoricoResponseDTO buscarPorFilme(Long filmeId) {
         Usuario usuario = obterUsuarioLogado();
         Historico historico = historicoDAO.findById(new HistoricoId(usuario.getId(), filmeId));
         if (historico == null) {
-            return new HistoricoResponseDTO(filmeId, null, null, 0L);
+            return new HistoricoResponseDTO(filmeId, null, "FILME", null, 0L, 0L, 0);
         }
-        return converterParaDTO(historico);
+        return historicoBO.converterParaDTO(historico);
     }
 
     public List<HistoricoResponseDTO> listarMeuHistorico() {
         Usuario usuario = obterUsuarioLogado();
         return historicoDAO.listarPorUsuario(usuario.getId()).stream()
-                .map(this::converterParaDTO)
+                .map(historicoBO::converterParaDTO)
                 .toList();
     }
 
@@ -87,14 +108,5 @@ public class HistoricoService {
             throw new SecurityException("Usuário não autenticado.");
         }
         return usuario;
-    }
-
-    private HistoricoResponseDTO converterParaDTO(Historico h) {
-        return new HistoricoResponseDTO(
-                h.getFilme().getId(),
-                h.getFilme().getTitulo(),
-                h.getFilme().getCaminhoImagemHorizontal(),
-                h.getTempoAssistido()
-        );
     }
 }

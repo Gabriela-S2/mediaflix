@@ -175,4 +175,27 @@ public class UsuarioService {
                 planoDTO
         );
     }
+
+    public boolean consultarPreferenciaTelemetria(String emailLogado) {
+        Usuario usuario = usuarioDAO.buscarPorEmail(emailLogado);
+        if (usuario == null) {
+            throw new IllegalArgumentException("Usuário não encontrado.");
+        }
+        return !Boolean.FALSE.equals(usuario.getTelemetriaAtiva());
+    }
+
+    @Transactional
+    public boolean atualizarPreferenciaTelemetria(String emailLogado, boolean telemetriaAtiva) {
+        Usuario usuario = usuarioDAO.buscarPorEmail(emailLogado);
+        if (usuario == null) {
+            throw new IllegalArgumentException("Usuário não encontrado.");
+        }
+        usuario.setTelemetriaAtiva(telemetriaAtiva);
+        if (telemetriaAtiva) {
+            usuario.setDataConsentimentoLgpd(java.time.LocalDateTime.now());
+        }
+        LOG.infof("Preferência LGPD atualizada para usuário ID %d -> telemetriaAtiva=%s",
+                usuario.getId(), telemetriaAtiva);
+        return telemetriaAtiva;
+    }
 }

@@ -125,4 +125,24 @@ public class UsuarioResource {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
     }
+
+    @GET
+    @Path("/privacidade")
+    @io.quarkus.security.Authenticated
+    public jakarta.ws.rs.core.Response consultarPrivacidade(@jakarta.ws.rs.core.Context jakarta.ws.rs.core.SecurityContext ctx) {
+        boolean ativa = usuarioService.consultarPreferenciaTelemetria(ctx.getUserPrincipal().getName());
+        return jakarta.ws.rs.core.Response.ok(java.util.Map.of("telemetriaAtiva", ativa)).build();
+    }
+
+    @PUT
+    @Path("/privacidade")
+    @io.quarkus.security.Authenticated
+    public jakarta.ws.rs.core.Response atualizarPrivacidade(
+            @jakarta.ws.rs.core.Context jakarta.ws.rs.core.SecurityContext ctx,
+            java.util.Map<String, Boolean> body
+    ) {
+        boolean ativa = Boolean.TRUE.equals(body.get("telemetriaAtiva"));
+        boolean resultado = usuarioService.atualizarPreferenciaTelemetria(ctx.getUserPrincipal().getName(), ativa);
+        return jakarta.ws.rs.core.Response.ok(java.util.Map.of("telemetriaAtiva", resultado)).build();
+    }
 }

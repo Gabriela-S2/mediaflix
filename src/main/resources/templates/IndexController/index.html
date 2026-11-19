@@ -40,6 +40,12 @@
 </section>
 
 <main>
+    <!-- 0. Continue Assistindo (com barra de progresso vermelha na base do card) -->
+    <div class="media-row" id="section-continue-assistindo" style="display: none;">
+        <h3>Continue Assistindo</h3>
+        <div class="media-carousel" id="continue-assistindo-list"></div>
+    </div>
+
     <!-- 1. Sugeridos (visível apenas quando o usuário possui preferências via Like) -->
     <div class="media-row" id="section-sugeridos" style="display: none;">
         <h3>Sugeridos para Você <small id="sugeridos-subtitulo" class="row-subtitle"></small></h3>
@@ -94,6 +100,15 @@
                 <option value="2">Padrão</option>
                 <option value="3">Premium</option>
             </select>
+
+            <div style="background: #2a2a2a; padding: 12px; border-radius: 6px; margin-bottom: 16px; border: 1px solid #3d3d3d;">
+                <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer; color: #e5e5e5; font-size: 0.88rem;">
+                    <input type="checkbox" id="perfil-telemetria-lgpd" checked style="margin-top: 3px; accent-color: #e50914;">
+                    <span>
+                        <strong>Privacidade (LGPD):</strong> Permitir coleta pseudonimizada de curtidas e visualizações para melhorar as sugestões globais do catálogo.
+                    </span>
+                </label>
+            </div>
 
             <div style="display:flex; gap:10px;">
                 <button type="submit" class="btn-submit" style="margin-top:0;">Salvar Alterações</button>

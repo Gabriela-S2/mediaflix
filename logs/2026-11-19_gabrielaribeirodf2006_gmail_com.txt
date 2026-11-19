@@ -1974,3 +1974,1489 @@
 - Payload:
   Sem Payload
 --------------------------------------------------
+[19:20:06] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/index
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=0, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/login]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?1]
+  Sec-Ch-Ua-Platform: ["Android"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/157.0.0.0 Mobile Safari/537.36]
+  X-Forwarded-For: [2804:38c4:9:a6f0:75c2:2bf5:6812:8353]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:20:07] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/perfil
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?1]
+  Sec-Ch-Ua-Platform: ["Android"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/157.0.0.0 Mobile Safari/537.36]
+  X-Forwarded-For: [2804:38c4:9:a6f0:75c2:2bf5:6812:8353]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:20:08] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/catalogo
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterCatalogoOrganizado
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?1]
+  Sec-Ch-Ua-Platform: ["Android"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/157.0.0.0 Mobile Safari/537.36]
+  X-Forwarded-For: [2804:38c4:9:a6f0:75c2:2bf5:6812:8353]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:20:08] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/perfil
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?1]
+  Sec-Ch-Ua-Platform: ["Android"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/157.0.0.0 Mobile Safari/537.36]
+  X-Forwarded-For: [2804:38c4:9:a6f0:75c2:2bf5:6812:8353]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:20:08] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/foto/6_2026-11-17.png?t=1795126808433
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?1]
+  Sec-Ch-Ua-Platform: ["Android"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/157.0.0.0 Mobile Safari/537.36]
+  X-Forwarded-For: [2804:38c4:9:a6f0:75c2:2bf5:6812:8353]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:20:12] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/imagem/horizontal/teste-filme-premium.webp
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?1]
+  Sec-Ch-Ua-Platform: ["Android"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/157.0.0.0 Mobile Safari/537.36]
+  X-Forwarded-For: [2804:38c4:9:a6f0:75c2:2bf5:6812:8353]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:20:12] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/imagem/vertical/teste-filme-premium.png
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?1]
+  Sec-Ch-Ua-Platform: ["Android"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/157.0.0.0 Mobile Safari/537.36]
+  X-Forwarded-For: [2804:38c4:9:a6f0:75c2:2bf5:6812:8353]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:58:09] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/catalogo
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterCatalogoOrganizado
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:58:09] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/perfil
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:58:09] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/foto/6_2026-11-17.png?t=1795129089691
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:58:20] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/imagem/vertical/teste-filme-premium.png
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:58:20] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/imagem/horizontal/teste-filme-premium.webp
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:58:28] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/perfil
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:58:28] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/foto/6_2026-11-17.png?t=1795129108886
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:58:36] POST http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/logout
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): logout
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Content-Length: [0]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Origin: [https://winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:01] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/index
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=0, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/login]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:02] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/perfil
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:02] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/perfil
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:02] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/catalogo
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterCatalogoOrganizado
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:02] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/foto/6_2026-11-17.png?t=1795129142320
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:02] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/imagem/horizontal/teste-filme-premium.webp
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:02] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/imagem/vertical/teste-filme-premium.png
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:07] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/perfil
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:07] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/privacidade
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): consultarPrivacidade
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:07] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/foto/6_2026-11-17.png?t=1795129147290
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:14] PUT http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/perfil
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): atualizarPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Content-Length: [54]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Origin: [https://winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  {"username":"Gabriela","caminhoFoto":null,"planoId":1}
+--------------------------------------------------
+[19:59:14] PUT http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/privacidade
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): atualizarPrivacidade
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Content-Length: [24]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Origin: [https://winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  {"telemetriaAtiva":true}
+--------------------------------------------------
+[19:59:14] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/catalogo
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterCatalogoOrganizado
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:14] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/foto/6_2026-11-17.png?t=1795129154506
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:20] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/assistir?id=4
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): watch
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=0, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:20] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/perfil
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/assistir?id=4]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:21] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/4
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarPorId
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/assistir?id=4]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:21] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/4/interacao
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): consultarInteracao
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/assistir?id=4]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:21] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/historico/4
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarProgresso
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/assistir?id=4]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:27] POST http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/4/like
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): alternarLike
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Content-Length: [0]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Origin: [https://winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/assistir?id=4]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:33] POST http://winiest-hyperexcursive-amaya.ngrok-free.dev/historico
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): salvarProgresso
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Content-Length: [51]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Origin: [https://winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/assistir?id=4]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  {"filmeId":4,"tempoAssistido":5,"duracaoTotal":213}
+--------------------------------------------------
+[19:59:34] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/index
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=0, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/assistir?id=4]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:35] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/perfil
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:35] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/perfil
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:35] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/catalogo
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterCatalogoOrganizado
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:36] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/foto/6_2026-11-17.png?t=1795129176191
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:36] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/imagem/horizontal/teste-filme-premium.webp
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:36] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/imagem/vertical/teste-filme-premium.png
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:42] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/assistir?id=4
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): watch
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=0, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:42] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/perfil
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/assistir?id=4]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:42] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/4
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarPorId
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/assistir?id=4]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:42] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/4/interacao
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): consultarInteracao
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/assistir?id=4]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:42] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/historico/4
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarProgresso
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/assistir?id=4]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:45] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/index
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=0, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/assistir?id=4]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:45] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/perfil
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:45] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/catalogo
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterCatalogoOrganizado
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:45] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/perfil
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): obterPerfil
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:45] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/foto/6_2026-11-17.png?t=1795129185725
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarFotoPerfil
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:45] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/imagem/horizontal/teste-filme-premium.webp
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:45] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/filmes/imagem/vertical/teste-filme-premium.png
+- Utilizador: gabrielaribeirodf2006@gmail.com
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): buscarImagemFilme
+- Headers:
+  Accept: [image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [image]
+  Sec-Fetch-Mode: [no-cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------

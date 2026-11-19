@@ -986,3 +986,344 @@
 - Payload:
   {"email":"premium@gmail.com","senha":"[MASKED]"}
 --------------------------------------------------
+[19:10:02] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/
+- Utilizador: Anonimo
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): redirecionarRaiz
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=0, i]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [2804:38c4:9:a6f0:75c2:2bf5:6812:8353]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:10:02] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/index
+- Utilizador: Anonimo
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): index
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cache-Control: [max-age=0]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=0, i]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [2804:38c4:9:a6f0:75c2:2bf5:6812:8353]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:10:04] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/login
+- Utilizador: Anonimo
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=0, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [2804:38c4:9:a6f0:75c2:2bf5:6812:8353]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:17:28] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/login
+- Utilizador: Anonimo
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): login
+- Headers:
+  Accept-Encoding: [gzip]
+  Cache-Control: [no-cache]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  User-Agent: [WhatsApp/2.2642.101 W]
+  X-Forwarded-For: [2804:38c4:9:a6f0:75c2:2bf5:6812:8353]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+  x-quarkus-hot-deployment-done: [true]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:18:08] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/index]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:18:14] GET http://localhost:8080/esqueci-minha-senha
+- Utilizador: Anonimo
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): recuperarSenha
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:18:16] GET http://localhost:8080/login
+- Utilizador: Anonimo
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  DNT: [1]
+  Host: [localhost:8080]
+  Referer: [http://localhost:8080/esqueci-minha-senha]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:20:04] POST http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Origin: [https://winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/login]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?1]
+  Sec-Ch-Ua-Platform: ["Android"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Linux; Android 16; Pixel 10) AppleWebKit/537.36 (KHTML, like Gecko) Edg/157.0.0.0 Mobile Safari/537.36]
+  X-Forwarded-For: [2804:38c4:9:a6f0:75c2:2bf5:6812:8353]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[19:58:19] POST http://localhost:8080/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Connection: [keep-alive]
+  Content-Length: [49]
+  Content-Type: [application/json]
+  DNT: [1]
+  Host: [localhost:8080]
+  ngrok-skip-browser-warning: [true]
+  Origin: [http://localhost:8080]
+  Referer: [http://localhost:8080/login]
+  sec-ch-ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  sec-ch-ua-mobile: [?0]
+  sec-ch-ua-platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+- Payload:
+  {"email":"premium@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------
+[19:58:36] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/login
+- Utilizador: Anonimo
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=0, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/index]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:58:40] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/cadastro
+- Utilizador: Anonimo
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): cadastro
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=0, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/login]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:00] GET http://winiest-hyperexcursive-amaya.ngrok-free.dev/login
+- Utilizador: Anonimo
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): login
+- Headers:
+  Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=0, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/cadastro]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [document]
+  Sec-Fetch-Mode: [navigate]
+  Sec-Fetch-Site: [same-origin]
+  Sec-Fetch-User: [?1]
+  Upgrade-Insecure-Requests: [1]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  Sem Payload
+--------------------------------------------------
+[19:59:01] POST http://winiest-hyperexcursive-amaya.ngrok-free.dev/usuarios/login
+- Utilizador: Anonimo
+- IP do Cliente: 0:0:0:0:0:0:0:1
+- Ação (Método Java): login
+- Headers:
+  Accept: [*/*]
+  Accept-Encoding: [gzip, deflate, br, zstd]
+  Accept-Language: [pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6]
+  Content-Length: [63]
+  Content-Type: [application/json]
+  Cookie: [MASKED]
+  Dnt: [1]
+  Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Ngrok-Skip-Browser-Warning: [true]
+  Origin: [https://winiest-hyperexcursive-amaya.ngrok-free.dev]
+  Priority: [u=1, i]
+  Referer: [https://winiest-hyperexcursive-amaya.ngrok-free.dev/login]
+  Sec-Ch-Ua: ["Not-A.Brand";v="99", "Microsoft Edge";v="157", "Chromium";v="157"]
+  Sec-Ch-Ua-Mobile: [?0]
+  Sec-Ch-Ua-Platform: ["Windows"]
+  Sec-Fetch-Dest: [empty]
+  Sec-Fetch-Mode: [cors]
+  Sec-Fetch-Site: [same-origin]
+  User-Agent: [Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0]
+  X-Forwarded-For: [200.17.57.98]
+  X-Forwarded-Host: [winiest-hyperexcursive-amaya.ngrok-free.dev]
+  X-Forwarded-Proto: [https]
+- Payload:
+  {"email":"gabrielaribeirodf2006@gmail.com","senha":"[MASKED]"}
+--------------------------------------------------

@@ -12,7 +12,7 @@ public class HistoricoDAO implements PanacheRepositoryBase<Historico, HistoricoI
 
     public List<Historico> listarPorUsuario(Long usuarioId) {
         return find(
-                "SELECT h FROM Historico h JOIN FETCH h.filme WHERE h.usuario.id = :usuarioId",
+                "SELECT h FROM Historico h JOIN FETCH h.filme WHERE h.usuario.id = :usuarioId AND h.tempoAssistido > 0 ORDER BY h.ultimaAtualizacao DESC",
                 Parameters.with("usuarioId", usuarioId)
         ).list();
     }

@@ -1,6 +1,7 @@
 package br.com.ifg.model.entity;
 
 import jakarta.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "usuario_filmes")
@@ -21,6 +22,18 @@ public class Historico {
 
     @Column(name = "tempo_assistido")
     private Long tempoAssistido = 0L;
+
+    @Column(name = "duracao_total")
+    private Long duracaoTotal = 0L;
+
+    @Column(name = "ultima_atualizacao")
+    private LocalDateTime ultimaAtualizacao = LocalDateTime.now();
+
+    @PrePersist
+    @PreUpdate
+    public void atualizarTimestamp() {
+        this.ultimaAtualizacao = LocalDateTime.now();
+    }
 
     public HistoricoId getId() {
         return id;
@@ -52,5 +65,21 @@ public class Historico {
 
     public void setTempoAssistido(Long tempoAssistido) {
         this.tempoAssistido = tempoAssistido;
+    }
+
+    public Long getDuracaoTotal() {
+        return duracaoTotal;
+    }
+
+    public void setDuracaoTotal(Long duracaoTotal) {
+        this.duracaoTotal = duracaoTotal;
+    }
+
+    public LocalDateTime getUltimaAtualizacao() {
+        return ultimaAtualizacao;
+    }
+
+    public void setUltimaAtualizacao(LocalDateTime ultimaAtualizacao) {
+        this.ultimaAtualizacao = ultimaAtualizacao;
     }
 }

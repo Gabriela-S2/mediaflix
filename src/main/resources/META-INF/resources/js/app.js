@@ -1,21 +1,33 @@
 const API_URL = '';
 
-function getAuthHeaders() {
-    return { 'Content-Type': 'application/json' };
+function getAuthHeaders(incluirJson = true) {
+    const headers = {
+        'ngrok-skip-browser-warning': 'true'
+    };
+    if (incluirJson) {
+        headers['Content-Type'] = 'application/json';
+    }
+    return headers;
 }
 
 async function exigirAutenticacao(somenteAdmin = false) {
     try {
-        const res = await fetch(`${API_URL}/usuarios/perfil`, { credentials: 'same-origin' });
+        const res = await fetch(`${API_URL}/usuarios/perfil`, {
+            headers: getAuthHeaders(false),
+            credentials: 'same-origin'
+        });
+
         if (!res.ok) {
             window.location.href = '/login';
             return null;
         }
+
         const perfil = await res.json();
         if (somenteAdmin && !perfil.isAdmin) {
             window.location.href = '/index';
             return null;
         }
+
         return perfil;
     } catch (error) {
         window.location.href = '/login';
@@ -23,6 +35,9 @@ async function exigirAutenticacao(somenteAdmin = false) {
     }
 }
 
+// ==========================================
+// FEEDBACK ASSÍNCRONO (SPINNER E TOASTS)
+// ==========================================
 function inicializarUI() {
     if (!document.getElementById('loading-overlay')) {
         const loader = document.createElement('div');
@@ -93,6 +108,9 @@ async function rotearPaginaAtual() {
     }
 }
 
+// ==========================================
+// MENU AVATAR E LOGOUT
+// ==========================================
 function configurarMenuAvatar() {
     const userMenu = document.getElementById('user-menu');
     const btnLogout = document.getElementById('btn-logout');
@@ -115,6 +133,7 @@ function configurarMenuAvatar() {
             e.preventDefault();
             await fetch(`${API_URL}/usuarios/logout`, {
                 method: 'POST',
+                headers: getAuthHeaders(false),
                 credentials: 'same-origin'
             });
             window.location.href = '/login';
@@ -122,6 +141,9 @@ function configurarMenuAvatar() {
     }
 }
 
+// ==========================================
+// CADASTRO, LOGIN E RECUPERAÇÃO DE SENHA
+// ==========================================
 function configurarCadastro() {
     const cadastroForm = document.getElementById('cadastro-form');
     if (!cadastroForm) return;
@@ -145,7 +167,8 @@ function configurarCadastro() {
         try {
             const response = await fetch(`${API_URL}/usuarios`, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: getAuthHeaders(true),
+                credentials: 'same-origin',
                 body: JSON.stringify(payload)
             });
 
@@ -176,7 +199,8 @@ function configurarLogin() {
         try {
             const response = await fetch(`${API_URL}/usuarios/login`, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: getAuthHeaders(true),
+                credentials: 'same-origin',
                 body: JSON.stringify({ email, senha })
             });
 
@@ -210,7 +234,8 @@ function configurarRecuperacaoSenha() {
             try {
                 const response = await fetch(`${API_URL}/recuperacao/gerar`, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
+                    headers: getAuthHeaders(true),
+                    credentials: 'same-origin',
                     body: JSON.stringify({ email: emailRecuperacao })
                 });
 
@@ -237,7 +262,8 @@ function configurarRecuperacaoSenha() {
             try {
                 const response = await fetch(`${API_URL}/recuperacao/redefinir`, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
+                    headers: getAuthHeaders(true),
+                    credentials: 'same-origin',
                     body: JSON.stringify({ email: emailRecuperacao, codigo, novaSenha })
                 });
 
@@ -256,14 +282,21 @@ function configurarRecuperacaoSenha() {
 }
 
 // ==========================================
-// CATÁLOGO SEGMENTADO (SUGERIDOS, MINHA LISTA, FILMES, SÉRIES E GÊNEROS)
+// CATÁLOGO: CONTINUE ASSISTINDO, SUGERIDOS, MINHA LISTA, FILMES, SÉRIES E GÊNEROS
 // ==========================================
+function formatarTempoMinutosSegundos(segundosTotais) {
+    const seg = Math.max(0, Math.floor(segundosTotais || 0));
+    const min = Math.floor(seg / 60);
+    const resto = seg % 60;
+    return `${min}:${resto.toString().padStart(2, '0')}`;
+}
+
 async function carregarCatalogoHome() {
     setLoading(true);
     try {
         const response = await fetch(`${API_URL}/filmes/catalogo`, {
             method: 'GET',
-            headers: getAuthHeaders(),
+            headers: getAuthHeaders(false),
             credentials: 'same-origin'
         });
 
@@ -274,21 +307,26 @@ async function carregarCatalogoHome() {
 
         const catalogo = await response.json();
 
-        // Destaque principal: prioriza o primeiro sugerido ou a primeira obra disponível
+        // Destaque principal
         const destaque = (catalogo.sugeridos && catalogo.sugeridos[0])
             || (catalogo.filmes && catalogo.filmes[0])
             || (catalogo.series && catalogo.series[0]);
         renderizarDestaque(destaque);
 
-        // 1. Sugeridos (exibido apenas se houver preferências geradas por Like)
+        // 0. Continue Assistindo (com barra de progresso vermelha estilo YouTube)
+        renderizarContinueAssistindo(catalogo.continueAssistindo);
+
+        // 1. Sugeridos (baseado nas preferências de gênero por Like + ranking TCP)
         const secSugeridos = document.getElementById('section-sugeridos');
         const listSugeridos = document.getElementById('sugeridos-list');
         const subSugeridos = document.getElementById('sugeridos-subtitulo');
         if (secSugeridos && listSugeridos) {
             if (catalogo.sugeridos && catalogo.sugeridos.length > 0) {
                 secSugeridos.style.display = 'block';
-                if (subSugeridos && catalogo.generosPreferidos?.length) {
-                    subSugeridos.innerText = `(Baseado em: ${catalogo.generosPreferidos.slice(0, 3).join(', ')})`;
+                if (subSugeridos) {
+                    subSugeridos.innerText = catalogo.generosPreferidos?.length
+                        ? `(Baseado em: ${catalogo.generosPreferidos.slice(0, 3).join(', ')})`
+                        : '(Em alta na plataforma)';
                 }
                 renderizarListaCards(listSugeridos, catalogo.sugeridos, true);
             } else {
@@ -320,7 +358,7 @@ async function carregarCatalogoHome() {
             renderizarListaCards(listSeries, catalogo.series || [], true, 'Nenhuma série disponível para o seu plano.');
         }
 
-        // 5. Secções dinâmicas por gênero disponível
+        // 5. Secções dinâmicas baseadas nos gêneros disponíveis
         const genreContainer = document.getElementById('genre-sections-container');
         if (genreContainer && catalogo.porGenero) {
             genreContainer.innerHTML = '';
@@ -347,6 +385,45 @@ async function carregarCatalogoHome() {
     } finally {
         setLoading(false);
     }
+}
+
+function renderizarContinueAssistindo(itens) {
+    const section = document.getElementById('section-continue-assistindo');
+    const container = document.getElementById('continue-assistindo-list');
+    if (!section || !container) return;
+
+    if (!itens || itens.length === 0) {
+        section.style.display = 'none';
+        return;
+    }
+
+    section.style.display = 'block';
+    container.innerHTML = '';
+
+    itens.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'media-item';
+
+        if (item.caminhoImagemHorizontal) {
+            card.style.backgroundImage = `url('${item.caminhoImagemHorizontal}')`;
+        }
+
+        const percentual = Math.max(3, Math.min(100, item.percentualAssistido || 0));
+        const tempoTexto = item.duracaoTotal > 0
+            ? `${formatarTempoMinutosSegundos(item.tempoAssistido)} / ${formatarTempoMinutosSegundos(item.duracaoTotal)}`
+            : formatarTempoMinutosSegundos(item.tempoAssistido);
+
+        card.innerHTML = `
+            <span class="watch-time-badge">${tempoTexto}</span>
+            <h4>${item.tituloFilme}</h4>
+            <div class="watch-progress-track">
+                <div class="watch-progress-bar" style="width: ${percentual}%;"></div>
+            </div>
+        `;
+
+        card.addEventListener('click', () => window.location.href = `/assistir?id=${item.filmeId}`);
+        container.appendChild(card);
+    });
 }
 
 function renderizarDestaque(obraDestaque) {
@@ -429,7 +506,7 @@ async function carregarDetalhesEProgressoFilme() {
     setLoading(true);
     try {
         const response = await fetch(`${API_URL}/filmes/${id}`, {
-            headers: getAuthHeaders(),
+            headers: getAuthHeaders(false),
             credentials: 'same-origin'
         });
 
@@ -462,7 +539,7 @@ async function carregarDetalhesEProgressoFilme() {
         const btnLike = document.getElementById('btn-like');
 
         const interacaoRes = await fetch(`${API_URL}/filmes/${id}/interacao`, {
-            headers: getAuthHeaders(),
+            headers: getAuthHeaders(false),
             credentials: 'same-origin'
         });
         if (interacaoRes.ok) {
@@ -475,7 +552,7 @@ async function carregarDetalhesEProgressoFilme() {
             btnLista.addEventListener('click', async () => {
                 const res = await fetch(`${API_URL}/filmes/${id}/lista`, {
                     method: 'POST',
-                    headers: getAuthHeaders(),
+                    headers: getAuthHeaders(false),
                     credentials: 'same-origin'
                 });
                 if (res.ok) {
@@ -494,7 +571,7 @@ async function carregarDetalhesEProgressoFilme() {
             btnLike.addEventListener('click', async () => {
                 const res = await fetch(`${API_URL}/filmes/${id}/like`, {
                     method: 'POST',
-                    headers: getAuthHeaders(),
+                    headers: getAuthHeaders(false),
                     credentials: 'same-origin'
                 });
                 if (res.ok) {
@@ -522,29 +599,53 @@ async function carregarDetalhesEProgressoFilme() {
             }
 
             const histRes = await fetch(`${API_URL}/historico/${id}`, {
-                headers: getAuthHeaders(),
+                headers: getAuthHeaders(false),
                 credentials: 'same-origin'
             });
             if (histRes.ok) {
                 const hist = await histRes.json();
                 if (hist.tempoAssistido > 0) {
                     videoEl.currentTime = hist.tempoAssistido;
-                    mostrarMensagem(`Retomando reprodução aos ${hist.tempoAssistido}s`);
+                    mostrarMensagem(`Retomando reprodução aos ${formatarTempoMinutosSegundos(hist.tempoAssistido)}`);
                 }
             }
 
             let ultimoSegundoSalvo = 0;
+
+            const enviarProgressoParaServidor = async (segundoAtual) => {
+                const duracaoTotal = Number.isFinite(videoEl.duration) ? Math.floor(videoEl.duration) : 0;
+                await fetch(`${API_URL}/historico`, {
+                    method: 'POST',
+                    headers: getAuthHeaders(true),
+                    credentials: 'same-origin',
+                    body: JSON.stringify({
+                        filmeId: parseInt(id),
+                        tempoAssistido: segundoAtual,
+                        duracaoTotal: duracaoTotal
+                    })
+                });
+            };
+
             videoEl.addEventListener('timeupdate', async () => {
                 const segundoAtual = Math.floor(videoEl.currentTime);
-                if (segundoAtual > 0 && segundoAtual - ultimoSegundoSalvo >= 5) {
+                if (segundoAtual > 0 && Math.abs(segundoAtual - ultimoSegundoSalvo) >= 5) {
                     ultimoSegundoSalvo = segundoAtual;
-                    await fetch(`${API_URL}/historico`, {
-                        method: 'POST',
-                        headers: getAuthHeaders(),
-                        credentials: 'same-origin',
-                        body: JSON.stringify({ filmeId: parseInt(id), tempoAssistido: segundoAtual })
-                    });
+                    await enviarProgressoParaServidor(segundoAtual);
                 }
+            });
+
+            videoEl.addEventListener('pause', async () => {
+                const segundoAtual = Math.floor(videoEl.currentTime);
+                if (segundoAtual > 0 && segundoAtual !== ultimoSegundoSalvo) {
+                    ultimoSegundoSalvo = segundoAtual;
+                    await enviarProgressoParaServidor(segundoAtual);
+                }
+            });
+
+            videoEl.addEventListener('ended', async () => {
+                const duracaoFinal = Number.isFinite(videoEl.duration) ? Math.floor(videoEl.duration) : ultimoSegundoSalvo;
+                ultimoSegundoSalvo = duracaoFinal;
+                await enviarProgressoParaServidor(duracaoFinal);
             });
         }
     } finally {
@@ -552,10 +653,13 @@ async function carregarDetalhesEProgressoFilme() {
     }
 }
 
+// ==========================================
+// AVATAR E EDIÇÃO DE PERFIL
+// ==========================================
 async function carregarAvatarUsuario() {
     try {
         const res = await fetch(`${API_URL}/usuarios/perfil`, {
-            headers: getAuthHeaders(),
+            headers: getAuthHeaders(false),
             credentials: 'same-origin'
         });
         if (res.ok) {
@@ -596,7 +700,7 @@ function configurarPerfil() {
             setLoading(true);
             try {
                 const res = await fetch(`${API_URL}/usuarios/perfil`, {
-                    headers: getAuthHeaders(),
+                    headers: getAuthHeaders(false),
                     credentials: 'same-origin'
                 });
                 if (res.ok) {
@@ -607,8 +711,20 @@ function configurarPerfil() {
                         previewFoto.src = `${perfil.caminhoFoto}?t=${Date.now()}`;
                     }
                     if (inputFoto) inputFoto.value = '';
-                    modal.classList.add('active');
                 }
+
+                // Carrega a preferência de privacidade (LGPD)
+                const resPriv = await fetch(`${API_URL}/usuarios/privacidade`, {
+                    headers: getAuthHeaders(false),
+                    credentials: 'same-origin'
+                });
+                if (resPriv.ok) {
+                    const priv = await resPriv.json();
+                    const chkLgpd = document.getElementById('perfil-telemetria-lgpd');
+                    if (chkLgpd) chkLgpd.checked = priv.telemetriaAtiva !== false;
+                }
+
+                modal.classList.add('active');
             } finally {
                 setLoading(false);
             }
@@ -632,7 +748,7 @@ function configurarPerfil() {
 
                 const resPerfil = await fetch(`${API_URL}/usuarios/perfil`, {
                     method: 'PUT',
-                    headers: getAuthHeaders(),
+                    headers: getAuthHeaders(true),
                     credentials: 'same-origin',
                     body: JSON.stringify(payload)
                 });
@@ -651,6 +767,7 @@ function configurarPerfil() {
 
                     const resFoto = await fetch(`${API_URL}/usuarios/perfil/foto`, {
                         method: 'POST',
+                        headers: getAuthHeaders(false),
                         credentials: 'same-origin',
                         body: formData
                     });
@@ -661,6 +778,20 @@ function configurarPerfil() {
                         return;
                     }
                     perfilAtualizado = await resFoto.json();
+                }
+
+                // Atualiza a preferência de privacidade (LGPD)
+                const chkLgpd = document.getElementById('perfil-telemetria-lgpd');
+                if (chkLgpd) {
+                    const resPriv = await fetch(`${API_URL}/usuarios/privacidade`, {
+                        method: 'PUT',
+                        headers: getAuthHeaders(true),
+                        credentials: 'same-origin',
+                        body: JSON.stringify({ telemetriaAtiva: chkLgpd.checked })
+                    });
+                    if (!resPriv.ok) {
+                        mostrarMensagem('Perfil salvo, mas houve falha ao atualizar a preferência de privacidade.', 'erro');
+                    }
                 }
 
                 if (perfilAtualizado.caminhoFoto) {

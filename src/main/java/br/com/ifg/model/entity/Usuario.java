@@ -34,6 +34,12 @@ public class Usuario {
     @Column(name = "is_admin")
     private Boolean isAdmin = false;
 
+    @Column(name = "telemetria_ativa", columnDefinition = "boolean default true")
+    private Boolean telemetriaAtiva = true;
+
+    @Column(name = "data_consentimento_lgpd")
+    private java.time.LocalDateTime dataConsentimentoLgpd = java.time.LocalDateTime.now();
+    
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "plano_id")
     private Plano plano;

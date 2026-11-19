@@ -2,10 +2,13 @@ package br.com.ifg.model.bo;
 
 import br.com.ifg.model.dto.CatalogoHomeResponseDTO;
 import br.com.ifg.model.dto.FilmeResponseDTO;
+import br.com.ifg.model.dto.HistoricoResponseDTO;
 import br.com.ifg.model.entity.Filme;
+import br.com.ifg.model.entity.Historico;
 import br.com.ifg.model.entity.Plano;
 import br.com.ifg.model.entity.Usuario;
 import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import org.jboss.resteasy.reactive.multipart.FileUpload;
 
 import javax.imageio.ImageIO;
@@ -19,6 +22,9 @@ import java.util.stream.Collectors;
 
 @ApplicationScoped
 public class FilmeBO {
+
+    @Inject
+    HistoricoBO historicoBO;
 
     public static final List<String> GENEROS_OFICIAIS = List.of(
             "Ação",
@@ -91,12 +97,15 @@ public class FilmeBO {
     }
 
     /**
-     * Constrói todas as secções do catálogo (Sugeridos, Minha Lista, Filmes, Séries e por Gênero).
+     * Constrói todas as secções do catálogo, integrando histórico, preferências pessoais
+     * e (opcionalmente) o ranking global de visualizações/curtidas vindo do servidor TCP.
      */
     public CatalogoHomeResponseDTO organizarCatalogoHome(
             List<Filme> catalogoPermitido,
+            List<Historico> historicoUsuario,
             Set<Filme> minhaListaUsuario,
-            Set<Filme> filmesCurtidosUsuario
+            Set<Filme> filmesCurtidosUsuario,
+            Map<Long, Double> scoresGlobaisTcp
     ) {
         Set<Long> idsPermitidos = catalogoPermitido.stream()
                 .map(Filme::getId)
@@ -106,7 +115,18 @@ public class FilmeBO {
                 ? Set.of()
                 : filmesCurtidosUsuario.stream().map(Filme::getId).collect(Collectors.toSet());
 
-        // 1. Calcula pesos de preferência com base nos gêneros das obras curtidas
+        Map<Long, Double> rankingGlobal = scoresGlobaisTcp != null ? scoresGlobaisTcp : Map.of();
+
+        // 1. Continue Assistindo (filmes/séries iniciados e permitidos pelo plano atual)
+        List<HistoricoResponseDTO> continueAssistindo = historicoUsuario == null
+                ? List.of()
+                : historicoUsuario.stream()
+                .filter(h -> h.getTempoAssistido() != null && h.getTempoAssistido() > 0)
+                .filter(h -> idsPermitidos.contains(h.getFilme().getId()))
+                .map(historicoBO::converterParaDTO)
+                .toList();
+
+        // 2. Calcula pesos de preferência com base nos gêneros das obras curtidas
         Map<String, Integer> pesosPorGenero = new LinkedHashMap<>();
         if (filmesCurtidosUsuario != null) {
             for (Filme curtido : filmesCurtidosUsuario) {
@@ -121,20 +141,22 @@ public class FilmeBO {
                 .map(Map.Entry::getKey)
                 .toList();
 
-        // 2. Sugeridos (apenas se o usuário tiver preferências registadas via like)
+        // 3. Sugeridos (combina afinidade de gênero do usuário + popularidade global do servidor TCP)
         List<FilmeResponseDTO> sugeridos = List.of();
-        if (!pesosPorGenero.isEmpty()) {
+        if (!pesosPorGenero.isEmpty() || !rankingGlobal.isEmpty()) {
             sugeridos = catalogoPermitido.stream()
                     .map(filme -> {
-                        int afinidade = filme.getGenerosLista().stream()
+                        double afinidadePessoal = filme.getGenerosLista().stream()
                                 .mapToInt(g -> pesosPorGenero.getOrDefault(g, 0))
                                 .sum();
-                        return Map.entry(filme, afinidade);
+                        double popularidadeGlobal = rankingGlobal.getOrDefault(filme.getId(), 0.0);
+                        // Se o usuário já tem gostos definidos, exige afinidade > 0 ou destaque global
+                        double scoreTotal = (afinidadePessoal * 10.0) + popularidadeGlobal;
+                        return Map.entry(filme, scoreTotal);
                     })
                     .filter(entry -> entry.getValue() > 0)
                     .sorted((a, b) -> {
-                        // Prioriza maior afinidade de gêneros; em empate, prioriza títulos ainda não curtidos
-                        int cmpScore = Integer.compare(b.getValue(), a.getValue());
+                        int cmpScore = Double.compare(b.getValue(), a.getValue());
                         if (cmpScore != 0) return cmpScore;
                         boolean aNaoCurtido = !idsCurtidos.contains(a.getKey().getId());
                         boolean bNaoCurtido = !idsCurtidos.contains(b.getKey().getId());
@@ -145,7 +167,7 @@ public class FilmeBO {
                     .toList();
         }
 
-        // 3. Minha Lista (filtrada pelo plano atual do usuário)
+        // 4. Minha Lista
         List<FilmeResponseDTO> minhaListaDTO = minhaListaUsuario == null
                 ? List.of()
                 : minhaListaUsuario.stream()
@@ -154,7 +176,7 @@ public class FilmeBO {
                 .map(this::converterParaDTO)
                 .toList();
 
-        // 4. Filmes e Séries
+        // 5. Filmes e Séries
         List<FilmeResponseDTO> filmes = catalogoPermitido.stream()
                 .filter(f -> !"SERIE".equalsIgnoreCase(f.getTipo()))
                 .map(this::converterParaDTO)
@@ -165,7 +187,7 @@ public class FilmeBO {
                 .map(this::converterParaDTO)
                 .toList();
 
-        // 5. Secções baseadas nos gêneros disponíveis no catálogo permitido
+        // 6. Secções por gênero disponível
         Map<String, List<FilmeResponseDTO>> porGenero = new LinkedHashMap<>();
         for (String generoOficial : GENEROS_OFICIAIS) {
             List<FilmeResponseDTO> doGenero = catalogoPermitido.stream()
@@ -180,6 +202,7 @@ public class FilmeBO {
         }
 
         return new CatalogoHomeResponseDTO(
+                continueAssistindo,
                 sugeridos,
                 generosPreferidos,
                 minhaListaDTO,
